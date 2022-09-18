@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search for articles</title>
+	<link rel="stylesheet" href="notion.css">
+	<script src="./test.js" defer> </script>
+	<style>
+		:root {
+			--bg-img: url("unsplash/fly-d-Clhft1GCXe8-unsplash.jpg")
+		}
+		.search-pos {
+			font-size: 1.7rem;
+			font-weight: bold;
+			z-index: -2;
+		}
+		.faq__links {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem 0 0 1rem;
+			gap: .5rem;
+			margin-top: 1rem;
+		}
+		.card {
+			border: 1px solid white;
+			border-radius: 10px;
+			background-color: #171421;
+			background-image: linear-gradient(
+				115deg,
+				#e8646a 20%, 
+				#e79881 20%, 
+				#e79881 40%, 
+				#81c19b 40%, 
+				#81c19b 60%, 
+				#709ad2 60%, 
+				#709ad2 80%, 
+				#c58cec 80%);
+			background-size: cover;
+			padding: .5rem;
+			font-family: 'Inter', 'Helvetica';
+			z-index: inherit;
+		}
+		.card > .main__links{
+			margin-bottom: .25rem;
+			font-size: 2em;
+		}
+		.card > .description__links{
+			font-size: 1.2rem;
+			color: #000000;
+			text-decoration: none !important; /* line 195 in notion.css confliction */
+		}
+		.question__links {
+			display: block;
+			color: #000000;
+		}
+		.trueinvisibility {
+    		display: none;
+		}
+		.whitespace {
+			display: relative;
+			width: 100%;
+			height: 20vh;
+		}
+		.search {
+			position: relative;
+			width: 50%;
+			left: 25%;
+			top: 10%;
+			color: #FEFEFE;
+			height: 2rem;
+			border-radius: 60px;
+			border: 1px solid #FEFEFE;
+			background: rgba(255,255,255,0.2);
+			backdrop-filter: blur(4px) saturate(180%);
+			z-index: 0;
+		}
+		input, select, textarea{
+    		color: #FEFEFE;
+			font-family: 'Inter', 'Helvetica';
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar">
+        <div class="logo">☕picafe blog</div>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Pricing</a></li>
+            <li><a href="/">Contact</a></li>
+          </div>
+        </ul>
+    </nav>
+
+	<div class="box">
+		
+	<label class="search-pos" for="search" title="Type to Find an Article"></label>
+	<input type="search" class="search" data-search>
+		
+	<div class="faq__links" data-user-container></div>
+
+	<template data-user-template>
+		<div class="card">        
+			<a class="question__links" questions></a>
+			<a class="description__links" answers></a>
+		</div>
+	</template>
+	</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+	{
+	"id": "OWTTPIOLLE1",
+	"Header": "Using the Pacman Package Manager",
+	"Description": "Pacman is the built-in package manager for Arch Linux. It’s like apt but for Arch Linux. It’s used to install packages from official repositories; stable and testing. There are four sections that you can get packages from; core, extra, community, and multilib. You don’t need to know what they are, but it is explained well on the <a href=\"https://wiki.archlinux.org/title/official_repositories#Stable_repositories\">Arch Wiki page</a>."
+	},
+	{
+	"id": "TIOTPLOWLE2",
+	"Header": "Troubleshooting Pacman",
+	"Description": "Keyring Issues (many)"
+	},
+	{
+		"id": "OWTTIOLPLE3",
+		"Header": "Tips and Tricks",
+		"Description": "There is a whole Arch Wiki page for <a href=\"https://wiki.archlinux.org/title/pacman/Tips_and_tricks\">pacman tips and tricks</a>, and we encourage you to check it out as you’ll be using the Arch Wiki a lot! Check out the contents list and discover what you think will help improve your Arch experience."
+	},
+	{
+		"id": "TIOOWLETPL4",
+		"Header": "The Arch User Repository (AUR)",
+		"Description": "The AUR or Arch User Repository is a repository where fellow Arch users can upload build files to packages so you can use them on Arch Linux. This purely community-driven repository is why Arch Linux has the most available packages to users. The AUR contains PKGBUILDs in GitHub repositories, allowing you to make a package from the source. Before installing a package, I would highly recommend first checking it out on the <a href=\"https://aur.archlinux.org/packages\">AUR website</a> to see if it is positively voted or not, as some packages can be outdated, broken, or have a virus (although this is extremely rare)."
+	},
+	{
+		"id": "LETIOOWTPL4",
+		"Header": "Using the Yay AUR Helper",
+		"Description": "Now that you have yay, you can easily install packages from the AUR! There isn’t much of a learning curve, as yay uses almost the exact same syntax as pacman. The syntax for finding, installing, and updating packages is exactly the same."
+	}
+]
