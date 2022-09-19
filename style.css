@@ -95,7 +95,7 @@ h5, .h5 {
 ================================================== */
 
 * {
-	cursor: auto;
+	cursor: none;
 }
 .cursor {
     --size: 8px;
@@ -130,7 +130,7 @@ h5, .h5 {
 	  --size: 0;
 }
 a {
-	  cursor: pointer;
+	cursor: pointer;
 }
 a:hover {
   	text-decoration: none;
@@ -210,7 +210,7 @@ a:hover {
 .cursor-shadow.active-blog-post-4 {
 	  background-image: url('http://ivang-design.com/alke/img/blog/4.jpg');
 }
-.cursor-shadow.active-blog-post-5 {
+/* .cursor-shadow.active-blog-post-5 {
 	  background-image: url('http://ivang-design.com/alke/img/blog/5.jpg');
 }
 .cursor-shadow.active-blog-post-6 {
@@ -218,7 +218,7 @@ a:hover {
 }
 .cursor-shadow.active-blog-post-7 {
 	  background-image: url('http://ivang-design.com/alke/img/blog/7.jpg');
-}
+} */
 
 /* #Blog nav link
 ================================================== */
@@ -242,29 +242,6 @@ a:hover {
 
 /* #Link to page
 ================================================== */
-
-.link-to-portfolio {
-	position: fixed;
-    top: 30px;
-    right: 30px;
-    z-index: 20;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 3px;
-    background-position: center center;
-    background-size: cover;
-    background-image: url('https://ivang-design.com/ig-logo.jpg');
-    box-shadow: 0 0 0 2px rgba(255,255,255,.1);
-    transition: opacity .2s, border-radius .2s, box-shadow .2s;
-    transition-timing-function: ease-out;
-}
-.link-to-portfolio:hover {
-    opacity: 0.8;
-    border-radius: 50%;
-    box-shadow: 0 0 0 20px rgba(255,255,255,.1);
-}
 
 @media (max-width: 991px) { 
   h5, .h5 {
@@ -498,16 +475,16 @@ input[type=checkbox]{
     transition: transform calc(700ms * 2) var(--e);
   }
   .card:nth-child(1):before {
-    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url(https://images.unsplash.com/photo-1662913497683-0934ae1958b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
   }
   .card:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url(https://images.unsplash.com/photo-1662286613246-fbc42810c5c6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
   }
   .card:nth-child(3):before {
-    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url(https://images.unsplash.com/photo-1663168679840-0a2ed088cbcd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
   }
   .card:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url(https://images.unsplash.com/photo-1660735839772-fe0dc14012a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
   }
   
   .content {
