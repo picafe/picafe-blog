@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
 @import url('https://rsms.me/inter/inter.css');
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', sans-serif;
     font-weight: 300;
     font-size: 15px;
     line-height: 1.7;
@@ -293,6 +294,7 @@ a:hover {
 	right: 0;
 	width: 100%;
 	z-index: 999;
+    line-height: 1.5;
 }
 .navbar:hover {
 	/* background-image: linear-gradient(
@@ -315,6 +317,8 @@ a:hover {
 }
 .nav-links a {
 	color: #FEFEFE;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 .logo {
@@ -523,7 +527,11 @@ input[type=checkbox]{
   .title {
     font-size: 1.3rem;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.5;
+  }
+
+  #smaller {
+    font-size: 1.15rem;
   }
   
   .copy {
