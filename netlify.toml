@@ -1,5 +1,2 @@
 [build]
     publish = "."
-[[redirects]]
-    from = "/my-music"
-    to = "/myplaylist"
