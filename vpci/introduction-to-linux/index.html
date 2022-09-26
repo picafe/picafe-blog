@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../notion.css">
+    <title>Introduction to Linux</title>
+    <script data-goatcounter="https://picafe.goatcounter.com/count" async src="../../count.js"></script>
+    <style>
+        :root {
+          --bg-img: url("../../unsplash/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg")
+        }
+      </style>
+      <!-- favicon links -->
+      <!-- <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon.png"> -->
+      <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+      <link rel="manifest" href="../../favicon/site.webmanifest">
+      <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <article id="c2cf6969-8455-4e98-91c9-ca0a0295da75" class="page sans box">
+        <header>
+            <img class="page-cover-image" src="https://images.unsplash.com/photo-1663875967691-15b02702931c" style="object-position: center 41.43%;" />
+            <div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://www.notion.so/icons/computer-chip_red.svg" /></div>
+            <h1 class="page-title"><strong>Introduction to Linux</strong></h1>
+        </header>
+        <div class="page-body">
+            <blockquote id="9d536a1e-d0a9-4338-97f9-1f6fb7128f20" class="">This page’s content is authored by <a href="https://github.com/AvanRocks/VPCI-Linux-Club-Blog">AvanRocks</a>; the previous founder.</blockquote>
+            <p id="49d3c9bf-b516-44ff-9de7-4d6c3539ebe1" class="">
+                Linux is a computer operating system (OS). Windows and macOS are also OSes. However, Linux is different than those OSes in numerous ways. It’s insufficient to simply say that Linux is an OS, as there is much more to say about
+                it.
+            </p>
+            <p id="8c09e31a-c7b0-473e-9eec-3722320f9949" class="">Here’s an example of what a Linux desktop could look like.</p>
+            <figure id="1e3f7f44-dae5-4dc2-96f1-5512dbf188f3" class="image">
+                <a href="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/linux-mint.png"><img src="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/linux-mint.png" /></a>
+            </figure>
+            <p id="d08bbd1d-e794-4086-bce9-d6d064b767e0" class="">However, it doesn’t have to look like that. You could make it look like this:</p>
+            <figure id="3c6d6b0a-6b56-42f2-b086-49df5d8a8f9c" class="image">
+                <a href="https://raw.githubusercontent.com/AlphaTechnolog/dotfiles/welcome/assets/awesomewm.png"><img src="https://raw.githubusercontent.com/AlphaTechnolog/dotfiles/welcome/assets/awesomewm.png" /></a>
+            </figure>
+            <p id="0df45715-db1b-4850-a6cf-98e3a3f1d7b0" class="">Or even this!:</p>
+            <figure id="82bef5ee-72e4-42e6-a772-5e160f944534" class="image">
+                <a href="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/terminal.jpg"><img src="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/terminal.jpg" /></a>
+            </figure>
+            <p id="77e7f0af-1197-44af-84e5-5a7c2179d520" class="">
+                Don’t be intimidated by the terminal in the above images. It’s OK if you don’t know what it is. In fact, in this article, I may mention terms you’ve never heard of, but that’s totally okay. I’m going to gloss over many concepts
+                right now, but we will learn them in more detail later.
+            </p>
+            <h1 id="3f05d83f-9484-466d-a897-667311724b60" class="">Why use Linux?</h1>
+            <h2 id="9bd2fd5f-03bd-4bca-a451-94311612c06b" class="">1. Free</h2>
+            <p id="678c7f63-2ea9-40ce-88a3-450e4b4e2f60" class="">
+                It’s completely free to install and use. For Windows, you have to pay a license fee (like $100 or so) which is usually included in the cost of your computer. Since Linux is free, you can install it by yourself on your computer
+                without paying.
+            </p>
+            <p id="99f2b5ea-8ffc-447c-9769-9a36389e52bf" class="">
+                But that’s not all that I mean by “free”. The source code for Linux is “open source”. This means that anyone can view the code that makes Linux work. It also has no copyright restrictions. You are free to copy, modify, and
+                distribute it as you wish. Even if <em>you</em> aren’t a programmer, someone else <em>is</em>, and you’d be surprised how much of a difference that makes. I’ll explain this in more detail later.
+            </p>
+            <h2 id="b8cb44e3-c7d7-42ee-8c57-45be0d708031" class="">2. Extensible</h2>
+            <p id="cd81d1a3-e8b0-411b-adc5-0b0f6e1e7818" class="">
+                This is a buzzword that’s thrown around a lot, so let me be specific. In Linux, you are able to use a command line to do regular computer stuff. The command line seems scary at first, but in reality, it’s very simple and usable.
+                You can automate frequent tasks and use text files, streams, and pipes to do stuff you would have never imagined was possible. It’s just <strong>easier</strong> to do complex (and normal) stuff once you learn how to use it.
+                There’s a pithy quote that sums it up in an amusing way:
+            </p>
+            <blockquote id="c092386c-a1d2-4af6-9150-c1cbfe53726f" class="">“GUIs make difficult things easy, and easy things impossible”</blockquote>
+            <h2 id="ee0807fa-6b61-42ec-875d-6ce3c20faa37" class="">3. Customizable</h2>
+            <p id="f31c1c73-1871-4540-ab37-55d0d5fe6f55" class="">
+                Not just customizable in the sense that you can change the wallpaper or change the location of the dock, but rather you can change <em>any</em> aspect of your system. For example, you can change the window manager, set custom
+                keybindings (to do virtually anything you want), use whatever software you want, etc.
+            </p>
+            <h2 id="af2afeed-b929-4ee3-a461-1dfd1fcdbddc" class="">4. Lightweight</h2>
+            <p id="1d0ab977-1ce1-43fb-8ffd-b49b20c0c849" class="">
+                By ‘Lightweight’, I mean that it can run on old hardware. Got an old laptop catching dust in the closet? It can run Linux, and it can run it well. Personally, I first installed Linux on my Chromebook (yes, full Linux on a
+                Chromebook), and although it may be argued that it is slightly slower, it is much more capable and customizable than it was before! Linux is perfect for hand-me-down or old computers that run Windows slowly; it even runs
+                (somewhat) smoothly on a 32-bit laptop from 13 years ago!
+            </p>
+            <h2 id="5c8c6fc4-097d-43af-a32f-3a57df8f363f" class="">5. Efficiency</h2>
+            <p id="917a76e8-c022-4687-a7aa-032ea0d9c3e9" class="">
+                You can customize your workflow to be tailored to you so that you can be as efficient as possible. One popular thing among Linux users is to control your computer using only the keyboard. Switching windows, opening programs,
+                browsing files, editing text, everything can be done using keyboard shortcuts. This eliminates the need to move your hand to your mouse, which some people find annoying and wastes their precious time. It may take some time to
+                get used to, or you might not even like it; in that case, you can use it without. It’s all up to you!
+            </p>
+            <h2 id="033cd401-046c-4fd8-9b59-718d1566b1a4" class="">6. Control</h2>
+            <p id="df857322-c10e-4271-9f2e-6aae1a7571d2" class="">
+                <strong>You</strong> control your Linux computer, not the other way around. The simplest example is that there are no forced updates on Linux, but it’s much more than that. You have the authority to make the computer do whatever
+                you want; there’s no handholding (although there can be if you so choose). You control what background programs are running, how your computer handles key repeats, etc. This control entails 2 things: Privacy and Security. Since
+                Linux is so user-controlled, it’s hard for it to collect data about you without you (or other Linux users) noticing and alerting the community. It’s really as if <strong>you</strong> own your computer. The security aspect comes
+                mainly because hackers are disincentivized to write malicious software for Linux. Only a small fraction of computer users run Linux, and those who do run it likely know what they are doing and are thus less likely to fall victim
+                to their attack.
+            </p>
+            <p id="f194feea-adfe-4b6e-b612-d17120d6a26c" class="">
+                Additionally, most Linux programs are “open-source”, which means their code is publicly available for anyone to read. This means that if the author tries to sneak in some malicious code, someone will copy the entire code of the
+                software, remove the malicious code, and re-publish it for everyone to use. Realistically, this means that malicious code doesn’t make it into the software in the first place since everyone knows that there’s no point in trying.
+            </p>
+            <h2 id="fa3f0eb4-0181-48ee-aa8f-0761630c74f4" class="">7. Software</h2>
+            <p id="c25254fc-e961-41dd-8e97-c126d6754e03" class="">
+                There is a wide variety of software in Linux. You’d be surprised how many different programs there are for the same task. There are tons of different PDF readers, file managers, etc. Most of the software is written by people who
+                do it for fun or for donations. Needless to say, all the software is free.
+            </p>
+            <p id="a79ac64b-addd-46f5-a370-33f2918e3656" class="">
+                In Linux, there is a program called a package manager. We will talk about it in detail later, but in essence, it automates the process of installing software. Just run a single command in the terminal (or click a button in a
+                GUI), and the software is installed. Even better, just run a single command, and all of the software on your computer is updated! No need to update every application you haven’t used in a while one by one.
+            </p>
+            <h2 id="b774b511-d667-4402-aae2-74ec978fd61a" class="">8. Fun!</h2>
+            <p id="1b39f2c2-f708-49a1-add5-821b4afe8771" class="">
+                This is the most important reason to use Linux. It’s so interesting learning about how your computer works and how you can tweak it. You will come to love messing with your system, taking it apart to see the internals function,
+                and finding clever solutions to problems. It’s a better type of fun than watching YouTube videos or TV shows. But make sure you exercise since running Linux is not the same as actually running! 😄
+            </p>
+            <h1 id="3bf97bc3-04ba-4613-96e1-d9903dcec3ad" class="">FOSS</h1>
+            <p id="3a16b83f-2eb7-45b1-8462-e2c3ce291e4e" class="">
+                Let me explain what Free and Open Source Software (or FOSS) is. You are likely to hear this abbreviation a lot in the context of Linux. You might even hear of “Libre Software”, which means the same thing. FOSS refers to a type
+                of software (or more specifically, a type of software licence) which allows anyone to run, copy, modify, and distribute it with no restrictions. This is a complicated and controversial topic, but I’ll try to keep it short here.
+                Anyone who knows how to can download the source code of a FOSS program (which is open-source), make changes, and release it to the public (which is a process known as ‘forking’). The biggest point here is that
+                <strong>EVEN IF YOU DON’T KNOW HOW TO PROGRAM</strong>, someone else <strong>DOES</strong>, so you can still benefit from it.
+            </p>
+            <p id="3fa6f9c2-0a43-4cf1-8181-e5676377d153" class="">
+                Two more related abbreviations you are likely to run into are <strong>GNU</strong> and <strong>FSF</strong>. The FSF or Free Software Foundation is a non-profit that advocates for free software. GNU stands for “GNU’s Not Unix”
+                (it’s a recursive acronym. Look it up, it’s pretty cool), and it’s the name that the FSF gave to their free operating system, which we call Linux. The FSF wrote a bunch of the core programs that you run on Linux, but we ended up
+                calling it Linux instead of GNU or GNU/Linux for various reasons that don’t really matter (You can always look it up!).
+            </p>
+            <h1 id="4a7b21f2-7a3f-471a-86e7-6cd6e387edb8" class="">Cons</h1>
+            <p id="27135b8d-bd07-480f-9133-0f7a5ee375ea" class="">Now let me mention a few disadvantages of using Linux. I’m not saying that you shouldn’t use Linux; these are just some of the challenges you will likely face.</p>
+            <h2 id="77c08565-16e1-47f6-bd0b-5b16f2ac1f52" class="">1. Steep Learning Curve</h2>
+            <p id="1c74431d-d01c-4103-9cae-b45a29aee3d1" class="">
+                When you first get started with Linux, there is a lot to learn. To get the most out of Linux, you will need to learn many concepts and terms at first, but later on, you can reap the benefits. The biggest obstacle is learning the
+                jargon: It sounds complex and difficult, but it’s really not. At first, you may think Linux is some “scary hacker stuff”, but you will come to realize that’s not the case. Rather, Linux can be a very usable OS if you know how to
+                use it. When I started using Linux, I had absolutely no clue what I was doing either!
+            </p>
+            <h2 id="7bec0133-638e-4c9e-a0fd-585b8a4b15a8" class="">2. Takes time to learn</h2>
+            <p id="44c1a6c8-05c5-4ced-a2c6-645444aa65a2" class="">To overcome that steep learning curve, you will need to spend some time. There’s not much else to say about this.</p>
+            <h2 id="21f60bf4-5800-4532-8f74-613196a5680b" class="">3. Not many people use it</h2>
+            <p id="d8dc670d-fe59-48e1-9ded-58832fa1a616" class="">
+                Do you know anyone who uses Linux? Likely not. If you encounter a problem you don’t know how to fix, and tutorials on the internet don’t make sense to you, you won’t have anyone to ask for help! This exacerbates the first two
+                disadvantages.
+            </p>
+            <h2 id="64431244-a87b-48c0-85c8-6d8668a5d1c0" class="">But…</h2>
+            <p id="d1285177-da1e-4c25-aee6-170a769a7c8f" class="">
+                The astute among you may have noticed that all 3 of the disadvantages listed above have something in common: we can help you with all of them. This is the central reason that I started Linux Club. I wanted to lessen these
+                disadvantages and help you benefit from using Linux. Let me elaborate. I can help ease the learning curve by teaching you and giving personalized answers to your questions/problems. It’s much better to have a real person
+                teaching and guiding you in Linux than stumbling around on the internet following random tutorials (which is what I did). This will lessen the time it takes for you to learn the concepts, which addresses the 2nd disadvantage.
+                Thirdly, you can always ask me to help you with specific problems that you encounter. Now you know at least one person who uses Linux!
+            </p>
+            <p id="27e289d2-e275-4a86-94aa-9b45ff723519" class="">
+                Side note: In case you guys are worried that some software that you use (or are forced to use for school) will not be available on Linux, there is something called “Dual-booting”, which means you can use both Windows/macOS and
+                Linux on the same computer, and you can choose between the two every time you start your computer. So don’t worry. Personally, I’ve come across very few situations when I absolutely had to start Windows, but it’s comforting to
+                know that it’s there.
+            </p>
+            <p id="35df9418-a338-47af-9677-1e2d3e242b06" class="">Lastly, I’d like to leave you with an amusing quote about Linux that often floats around the internet:</p>
+            <figure class="block-color-gray_background callout" style="white-space: pre-wrap; display: flex;" id="7badbad2-5755-4164-bcc5-5cd11aef4b01">
+                <span class="icon">🤔</span>
+                <div style="width: 100%;">Linux is user-friendly. It’s just selective about who its friends are.</div>
+            </figure>
+            <p id="52c4dd1b-88cb-47f5-8689-7b0ea8f8707d" class=""></p>
+        </div>
+    </article>
+    
+</body>
+</html>
