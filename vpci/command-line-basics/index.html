@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../notion.css">
+    <title>Introduction to Linux</title>
+    <script data-goatcounter="https://picafe.goatcounter.com/count" async src="../../count.js"></script>
+    <script src="https://kit.fontawesome.com/0c41da93e2.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+          --bg-img: url("../../unsplash/pawel-czerwinski-3FBMqmNidlA-unsplash.jpg")
+        }
+      </style>
+      <!-- favicon links -->
+      <!-- <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon.png"> -->
+      <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+      <link rel="manifest" href="../../favicon/site.webmanifest">
+      <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav class="navbar">
+		<div class="logo"><i class="fa-brands fa-linux"></i> VPCI Linux</div>
+		<ul class="nav-links">
+			<input type="checkbox" id="checkbox_toggle" />
+			<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+			<div class="menu">
+				<li class="hover-target"><a href="../">Home</a></li>
+				<li class="hover-target"><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
+				<li class="hover-target"><a href="/">About Us</a></li>
+				
+			</div>
+		</ul>
+	</nav>
+    <article id="9cdedd49-ab43-4584-94b1-54f113c7426b" class="page sans box">
+        <header>
+            <img class="page-cover-image" src="https://images.unsplash.com/photo-1663168679840-0a2ed088cbcd" style="object-position: center 50%;" />
+            <div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://www.notion.so/icons/command-line_blue.svg" /></div>
+            <h1 class="page-title">Command Line Basics</h1>
+        </header>
+        <div class="page-body">
+            <blockquote id="bd5a5ac0-c3de-4f1e-8660-87fcecb4ba9d" class="">This page’s content is authored by <a href="https://github.com/AvanRocks/VPCI-Linux-Club-Blog">AvanRocks</a></blockquote>
+            <p id="28c34214-22a7-45ed-b45f-59b17d5f4c99" class="">The CLI, or <strong>Command Line Interface,</strong> is a text-based way to do stuff on your Linux computer. (Back in the old days, this was actually the <em>only</em> way to interact with the computer).</p>
+            <p id="22752a77-f1e4-46b8-acf8-1f2732af60c3" class=""></p>
+            <h2 id="c72cf48a-197a-4896-b6eb-08d612c6e100" class="">Terminology</h2>
+            <ul id="7e406eba-9713-4521-b6e5-837963c5396e" class="bulleted-list">
+                <li style="list-style-type: disc;">directory = folder</li>
+            </ul>
+            <h2 id="40412200-1a8b-42dd-a9be-d4629f7bb036" class="">Filesystem hierarchy</h2>
+            <ul id="f0113835-d595-428d-a76d-8d5f990882ed" class="bulleted-list">
+                <li style="list-style-type: disc;">All files in Linux are arranged in a hierarchical directory structure</li>
+            </ul>
+            <ul id="7a084ddb-086c-4feb-8a12-2a80b9c40851" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    A directory can hold 2 things:
+                    <ol type="1" id="435bea3b-8c30-4c35-9e9a-62fe5a883d37" class="numbered-list" start="1">
+                        <li>Files</li>
+                    </ol>
+                    <ol type="1" id="2db36cd0-41e0-4126-8886-692d567748e6" class="numbered-list" start="2">
+                        <li>Other directories</li>
+                    </ol>
+                </li>
+            </ul>
+            <ul id="25f721af-a8b0-4878-a66f-b0d815d8ae9b" class="bulleted-list">
+                <li style="list-style-type: disc;">The topmost directory (or outermost folder) is ‘/’ and is called the root directory.</li>
+            </ul>
+            <ul id="d6cccd4c-0312-4a96-95eb-43731c66c88f" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    Inside the root directory, there are many directories (most of them, you don&#x27;t need to worry about). One of them is called ‘home’.
+                    <ul id="66a60992-6ad3-4c9c-84fd-f07105913376" class="bulleted-list">
+                        <li style="list-style-type: circle;">Inside ‘home’, each user has their own ‘home directory’ named after their username. All your personal files are in your home directory.</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="62111190-b6da-4ef3-bc4c-998e25286578" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    If there&#x27;s a directory or file inside another directory, then you can append its name to the parent directory to get its full path name.
+                    <ul id="dc52ace5-b0fd-4c0e-89b4-cf9c01d76f21" class="bulleted-list">
+                        <li style="list-style-type: circle;">for ex. bob&#x27;s home directory would be called /home/bob</li>
+                    </ul>
+                    <ul id="34074063-8e4f-419c-9068-9a5541df1704" class="bulleted-list">
+                        <li style="list-style-type: circle;">another example: /home/bob/Documents/school/math/homework.pdf</li>
+                    </ul>
+                </li>
+            </ul>
+            <p id="44f2f5fa-5979-4272-b263-3bb3fcce3f6a" class="">Note: if you append a slash (/) to a <strong>directory</strong> name, it doesn&#x27;t change the meaning (it doesn&#x27;t matter). This is not the case for files, however.</p>
+            <p id="7ae2fb34-8c5d-44cc-8a27-08c16e2df89d" class="">You may be familiar with these terms from using Windows/macOS, but it is useful to know how to use file paths in a Terminal.</p>
+            <h2 id="8bc05d26-6825-41da-bcd6-748f41034271" class="">Terminal</h2>
+            <ul id="23828cce-efa5-4311-a977-e313b6712561" class="bulleted-list">
+                <li style="list-style-type: disc;">The Terminal is a program that allows you to use the CLI.</li>
+            </ul>
+            <ul id="4b559c5e-90c6-44f8-9b5c-547f9641b09c" class="bulleted-list">
+                <li style="list-style-type: disc;">Open with Ctrl-Alt-T or search for ‘Terminal’ in the applications menu.</li>
+            </ul>
+            <ul id="a538ef82-bf1a-4ee0-aea4-9571d1fc50df" class="bulleted-list">
+                <li style="list-style-type: disc;">When using the terminal, you can think of the terminal as being ‘in’ a directory at all times.</li>
+            </ul>
+            <ul id="29a98e96-b3a7-42b8-818f-e950dc0d1fef" class="bulleted-list">
+                <li style="list-style-type: disc;">You interact with the computer by typing commands and then pressing Enter.</li>
+            </ul>
+            <h1 id="82d8173f-5530-42c6-a148-d1deb1641801" class="">Commands</h1>
+            <h2 id="2bc40d36-8ab4-4cd9-bcd4-a2620ed22ec1" class="">sudo - super user do</h2>
+            <ul id="ad91a439-620a-4afe-b83a-61affb6c1677" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    <code>sudo</code> is a command that lets you run other commands as the root user. The root user is just the default user that comes with Linux. Just like how you created a user account when you installed Linux, the root user
+                    (account) also exists. However, you cannot log in as the root user, which is why you don&#x27;t see it as an option on the login screen. The reason it exists is that regular users (like the one you created during
+                    installation), by default, don&#x27;t have permissions to do some things on Linux. There are some directories that you cannot write to, meaning that there are some commands that you cannot run, etc. This is due to the
+                    historical use of Linux on large mainframe computers that had multiple users. But to us, it means that commands or operations that modify files outside of the /home or ~ directory need root permissions to run, as those
+                    directories are owned by the root user. In other words, to modify the directories below except home, you need to use <code>sudo</code>.
+                </li>
+            </ul>
+            <figure id="e214bc74-a770-4d88-8df4-bd48335b3433" class="image">
+                <a href="filesystem.png"><img style="width: 671px;" src="filesystem.png" /></a>
+            </figure>
+            <h2 id="13b19d47-9fe3-439c-be6e-0d4e51a2df4f" class="">pwd - print working directory</h2>
+            <ul id="df43ffc1-6b37-4e92-a79c-bc70a7556215" class="bulleted-list">
+                <li style="list-style-type: disc;">outputs the ‘current’ directory, or in other words, the directory that the terminal is ‘in’ currently</li>
+            </ul>
+            <ul id="fbd4b123-dffe-427d-a18d-9d941a32a7cf" class="bulleted-list">
+                <li style="list-style-type: disc;">you can see the same information written in blue text on the terminal</li>
+            </ul>
+            <ul id="92c0c75e-bc91-432a-9f0d-f5c3d9784de8" class="bulleted-list">
+                <li style="list-style-type: disc;">a tilde (~) is short for your home directory (which is /home/bob, but replacing bob with your username)</li>
+            </ul>
+            <h2 id="70b4b1f8-5841-4957-9b50-93b01585cee1" class="">ls - list</h2>
+            <ul id="44414e60-3c93-49d6-afe9-5ec45d49c344" class="bulleted-list">
+                <li style="list-style-type: disc;">lists all files and directories in the current directory</li>
+            </ul>
+            <ul id="483ab789-3c86-459c-a633-f5fe9800519e" class="bulleted-list">
+                <li style="list-style-type: disc;">shows you what you would normally see in a graphical file browser</li>
+            </ul>
+            <ul id="7d5d0749-517c-4bee-8ae2-551d6c262386" class="bulleted-list">
+                <li style="list-style-type: disc;">type <code>ls -a</code> to show all files, including hidden files. Hidden files are those that start with a dot (.)</li>
+            </ul>
+            <ul id="bfb183cf-08f1-49a1-9b48-0c1e22d0e1bb" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    In general, you can replace the ‘a’ with other letters to modify the effect of a command. These are known as ‘options’ or ‘flags’.
+                    <ul id="13c7509f-95e6-4889-b099-dcf360eba2b6" class="bulleted-list">
+                        <li style="list-style-type: circle;">
+                            For example, you can use the ‘l’ option with the <code>ls</code> command (type <code>ls -l</code>) to see some more info about the files and directories (don&#x27;t worry about what it means)
+                        </li>
+                    </ul>
+                    <ul id="1e7779ba-e554-4371-97eb-3d2d592eb7e9" class="bulleted-list">
+                        <li style="list-style-type: circle;">Other commands have options too</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 id="d16570c6-1226-4ada-ac0d-14002c0d5089" class="">cd &lt;name&gt; - change directory</h2>
+            <ul id="a453e81e-b928-423c-8811-5863e90f4739" class="bulleted-list">
+                <li style="list-style-type: disc;">changes the current directory. Replace &lt;name&gt; with the name of the directory that you wish to enter. Equivalent to clicking on a folder in a graphical file browser</li>
+            </ul>
+            <ul id="86f64546-235f-4807-b645-8ecd339d310a" class="bulleted-list">
+                <li style="list-style-type: disc;">type <code>cd ..</code> to go to the parent directory</li>
+            </ul>
+            <ul id="8baa975b-67b2-48a9-b58d-b1dba8fd203f" class="bulleted-list">
+                <li style="list-style-type: disc;">you can chain multiple directories like so:</li>
+            </ul>
+            <pre id="7440f681-0bdc-495d-8efb-8b8a0a037e2f" class="code code-wrap"><code>cd Documents/notes/</code></pre>
+            <p id="1a3b6c58-ca05-412d-bfae-add96a4c4766" class="">You can even chain ‘..’ like this:</p>
+            <pre id="bb6f80dc-0db9-4be7-8ae5-f46f8f588927" class="code code-wrap"><code>cd ../../../</code></pre>
+            <ul id="4ac30981-915c-42c4-92f6-f2c1e99127b3" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    you can use ‘absolute’ and ‘relative’ path names of the directories
+                    <ul id="1507748b-dc7b-4fe9-9aeb-57981fc17749" class="bulleted-list">
+                        <li style="list-style-type: circle;">absolute names start with ‘/’. for ex. /home/bob/Documents/english</li>
+                    </ul>
+                    <ul id="189d1a4e-25b6-43db-95ad-cbc678e11b87" class="bulleted-list">
+                        <li style="list-style-type: circle;">relative names don&#x27;t start with ‘/’ and are assumed to begin from the current directory. for ex. Documents/english</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 id="179625eb-d89e-41db-8744-bc17042908e8" class="">man &lt;command&gt; - manual</h2>
+            <ul id="9a7ead19-0849-42b2-93eb-4c04bdbfcd96" class="bulleted-list">
+                <li style="list-style-type: disc;">shows you information about the usage of a command</li>
+            </ul>
+            <ul id="89a2f47a-bec0-43d7-a6a0-37e4239c74ab" class="bulleted-list">
+                <li style="list-style-type: disc;">replace &lt;command&gt; with a command, like ‘ls’ or ‘cd’</li>
+            </ul>
+            <ul id="8c93a7a2-57aa-4c36-b51e-0782f2c834dc" class="bulleted-list">
+                <li style="list-style-type: disc;">press q to quit</li>
+            </ul>
+            <ul id="91fab4df-ff46-490c-b43d-16db8fa04b9d" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    although the ‘man pages’ (which is the common name for these manual entries) may seem hard to understand at first, I encourage you to at least try to read the Descrip./tion section. Over time, you will learn the jargon and
+                    the man pages will become more and more helpful.
+                </li>
+            </ul>
+            <ul id="c4b173b0-d0fa-413d-aa0d-10b81fa81b22" class="bulleted-list">
+                <li style="list-style-type: disc;">man pages also list all the commands’ options/flags and what each option does</li>
+            </ul>
+            <h1 id="3f29f1a2-cbe6-4ba5-86f8-e20a680ceecd" class="">More Basic Commands</h1>
+            <h2 id="d6b7d3f5-71ed-426f-9ae5-c77fb82b39c5" class="">mkdir (make directory)</h2>
+            <ul id="958e803d-3659-48a5-b5fe-72ca4f85f418" class="bulleted-list">
+                <li style="list-style-type: disc;">To create a directory:</li>
+            </ul>
+            <pre id="f7c6f7bd-77aa-467a-ac30-045be18630e2" class="code code-wrap"><code>mkdir myDir</code></pre>
+            <ul id="45b52548-925e-46d8-a2d0-84fbaa703b2c" class="bulleted-list">
+                <li style="list-style-type: disc;">To create a directory and also create subdirectories:</li>
+            </ul>
+            <pre id="961ac976-649e-45e8-88c2-4ba155e7d283" class="code code-wrap"><code>mkdir -p dir1/dir2/dir3</code></pre>
+            <h2 id="501ebd1d-3d4f-4d67-acf6-4e8d0faa9226" class="">rmdir (remove directory)</h2>
+            <pre id="c3115b9e-70d1-469a-a686-bf662fbea265" class="code code-wrap"><code>rmdir myDir</code></pre>
+            <ul id="ce5e27f8-ff42-4187-b25a-6e8f555f2e79" class="bulleted-list">
+                <li style="list-style-type: disc;">rmdir only removes the directory if it&#x27;s empty</li>
+            </ul>
+            <h2 id="104cf2e3-7863-47d5-b71a-281d0c83db95" class="">touch</h2>
+            <ul id="8ebf96a9-31c1-457a-8f4c-526a7dca2398" class="bulleted-list">
+                <li style="list-style-type: disc;">creates an empty file with the specified name</li>
+            </ul>
+            <pre id="83a5d68e-61a3-455f-9d38-afe70e8e1299" class="code"><code>touch myFile</code></pre>
+            <h2 id="2a0679c5-b840-4631-84d2-cc0e34cbf4e1" class="">ls (some more options for ls)</h2>
+            <p id="423ab554-f55f-49cb-a9c3-96caf7f54f37" class="">only shows files with the name “myFile”</p>
+            <pre id="b5320141-d481-49f1-a780-3fc12e911de3" class="code"><code>ls myFile</code></pre>
+            <ul id="a37e300b-c313-4b39-8283-67e0f1ca7c69" class="bulleted-list">
+                <li style="list-style-type: disc;">
+                    you can use wildcard characters:
+                    <ul id="b1f5aa9e-879e-4a6c-a8a3-84a450802117" class="bulleted-list">
+                        <li style="list-style-type: circle;">? - any one character</li>
+                    </ul>
+                    <ul id="31529acd-269e-402c-8a81-f8755d996862" class="bulleted-list">
+                        <li style="list-style-type: circle;">- any amount of any character(s)</li>
+                    </ul>
+                    <ul id="c32d9a28-6c9b-4e1e-b1af-0fe6b7f308fe" class="bulleted-list">
+                        <li style="list-style-type: circle;">[ab] - a or b</li>
+                    </ul>
+                    <ul id="520ae545-c4fa-4e61-94e7-312cacdd01f9" class="bulleted-list">
+                        <li style="list-style-type: circle;">[a-z] - characters from a to z</li>
+                    </ul>
+                    <ul id="9ee0c916-500f-404f-8669-3cdf6dd35208" class="bulleted-list">
+                        <li style="list-style-type: circle;">[!a] - any character except a</li>
+                    </ul>
+                </li>
+            </ul>
+            <pre id="08732c44-91cb-48f1-be56-47dc3d828f88" class="code code-wrap"><code>ls myF?le
+    ls myF*
+    ls myFile[ab]
+    ls myFile[a-z]
+    ls myFile[!a]</code></pre>
+            <ul id="054929da-e7cb-4fd6-95f5-175fd5c9a368" class="bulleted-list">
+                <li style="list-style-type: disc;">not very useful in this case, but you can use these wildcard characters with any command</li>
+            </ul>
+            <h2 id="07712823-08fa-4081-bd55-c496d21e762b" class="">echo</h2>
+            <ul id="34791f49-4b57-4039-b0eb-5ec7a5aebdb3" class="bulleted-list">
+                <li style="list-style-type: disc;">repeats the arguments back to you</li>
+            </ul>
+            <ul id="1ded2d73-a5f9-4cb1-a9d9-7cdd4c2f7195" class="bulleted-list">
+                <li style="list-style-type: disc;">use &gt; to send the output to a file (caution: it overwrites the file!)</li>
+            </ul>
+            <ul id="416a3ec0-5ce2-4705-8af8-24969fdf876b" class="bulleted-list">
+                <li style="list-style-type: disc;">use &gt;&gt; to append the output to a file</li>
+            </ul>
+            <ul id="a726b84d-f5dd-4424-866f-f1f0e9a24342" class="bulleted-list">
+                <li style="list-style-type: disc;">&gt; and &gt;&gt; can be used with any command</li>
+            </ul>
+            <pre id="8802185d-8906-4150-a63b-1d529f1645e4" class="code code-wrap"><code>echo Hello, world!
+    echo stuff &gt; myFile
+    echo stuff &gt;&gt; myFile</code></pre>
+            <h2 id="35a778c9-390b-4d09-afe3-70f043e9e418" class="">cat (concatenate)</h2>
+            <ul id="de562879-e884-4d4d-a057-f51005d68ecb" class="bulleted-list">
+                <li style="list-style-type: disc;">outputs contents of a file</li>
+            </ul>
+            <ul id="67ffb7ef-a959-4ee0-9964-a0dca8dcc98c" class="bulleted-list">
+                <li style="list-style-type: disc;">cat -n numbers the lines</li>
+            </ul>
+            <pre id="46df9a6d-0cd5-4c6e-8a57-48945c7f854b" class="code code-wrap"><code>cat myFile
+    cat -n myFile</code></pre>
+            <h2 id="e6834163-e42f-4079-aa73-6b46a3f7ef08" class="">rm (remove)</h2>
+            <ul id="9d29eb79-2895-4fcb-974e-cf888512a90c" class="bulleted-list">
+                <li style="list-style-type: disc;">deletes a file (permanently! when using commands, there is no trash)</li>
+            </ul>
+            <ul id="270eb8a3-8614-4218-93a2-d640cfa0f885" class="bulleted-list">
+                <li style="list-style-type: disc;">rm -i ask you for confirmation before deleting</li>
+            </ul>
+            <ul id="4599f826-3aea-4803-bcba-c239e9b0f99e" class="bulleted-list">
+                <li style="list-style-type: disc;">Tip: always use rm -i so you don&#x27;t accidentally delete anything</li>
+            </ul>
+            <ul id="446a1cbf-13ca-4e70-b417-3dae7dac7abd" class="bulleted-list">
+                <li style="list-style-type: disc;">rm -r deletes a directory (including its contents)</li>
+            </ul>
+            <ul id="e2876b61-bd86-4052-bd09-195756d2c3d9" class="bulleted-list">
+                <li style="list-style-type: disc;">you can combine the options. You can do this for any command</li>
+            </ul>
+            <pre id="7bff4f7a-56b9-4770-b9e9-f3e1c697f47f" class="code code-wrap"><code>rm myFile
+    rm -i myFile
+    rm -r myDir
+    rm -ir myDir</code></pre>
+            <h2 id="69903fb2-1fb6-4baf-8101-8aeae03bbfab" class="">cp (copy)</h2>
+            <ul id="764577eb-6241-4b43-828d-a120d58c3583" class="bulleted-list">
+                <li style="list-style-type: disc;">copy a file</li>
+            </ul>
+            <ul id="44df914d-f5fa-4ebd-a5db-770766348abc" class="bulleted-list">
+                <li style="list-style-type: disc;">1st argument is the source file, 2nd is the destination file</li>
+            </ul>
+            <ul id="fb817b1a-5369-4302-8e10-ae6a1fd7a44c" class="bulleted-list">
+                <li style="list-style-type: disc;">if the destination file exists, cp will overwrite it</li>
+            </ul>
+            <ul id="199ebed4-797a-49b6-b38d-fb29bd12a062" class="bulleted-list">
+                <li style="list-style-type: disc;">if it doesn&#x27;t, cp will create it</li>
+            </ul>
+            <ul id="5c3dee13-d510-4d6a-a9ba-a2dacffc0fc4" class="bulleted-list">
+                <li style="list-style-type: disc;">cp -i asks for confirmation before overwriting</li>
+            </ul>
+            <ul id="db87c230-53e4-464c-8ffc-28da611b75f1" class="bulleted-list">
+                <li style="list-style-type: disc;">always use cp -i</li>
+            </ul>
+            <pre id="4ad7d640-53a2-40a5-aee1-4461604cbf1f" class="code code-wrap"><code>cp myFile myCopiedFile
+    cp -i myFile myNewFile
+    cp -r myFile myNewFile
+    cp myFile otherDir/overHere/myCopiedFile</code></pre>
+            <h2 id="ef1d2100-81fc-413b-879d-788881d9d475" class="">mv (move)</h2>
+            <ul id="8580a86d-d702-4bb6-b36c-fc6f31318d73" class="bulleted-list">
+                <li style="list-style-type: disc;">mv can move or rename a file</li>
+            </ul>
+            <ul id="cbcd6a5b-f7a3-421b-a499-e9d85599cc96" class="bulleted-list">
+                <li style="list-style-type: disc;">the first argument is the source file; the second argument is the destination file</li>
+            </ul>
+            <ul id="212b11f7-4a8b-40ac-abc6-e614cf346ffe" class="bulleted-list">
+                <li style="list-style-type: disc;">if the destination file already exists, mv will overwrite it</li>
+            </ul>
+            <ul id="7ac5da83-2ed4-41bb-ab7f-72feaf5f681f" class="bulleted-list">
+                <li style="list-style-type: disc;">if it doesn&#x27;t exist, mv will create it</li>
+            </ul>
+            <ul id="7bfa2303-0220-4e79-8fd1-f7ddd2f590e1" class="bulleted-list">
+                <li style="list-style-type: disc;">mv -i asks for confirmation before overwriting</li>
+            </ul>
+            <ul id="8ace66de-22db-407f-869f-aec86dda3b20" class="bulleted-list">
+                <li style="list-style-type: disc;">always use mv -i</li>
+            </ul>
+            <ul id="e41596bd-35ad-439a-a7bc-704c2cb1294a" class="bulleted-list">
+                <li style="list-style-type: disc;">you can also move directories</li>
+            </ul>
+            <ul id="5824498a-3a17-45f6-8db1-bdadaffe0544" class="bulleted-list">
+                <li style="list-style-type: disc;">if the source is a file, and the destination is a directory, the file gets moved into the destination directory and retains its name</li>
+            </ul>
+            <pre id="25ab3671-1b0a-4378-86fb-f01409889ea6" class="code code-wrap"><code>mv myFile myNewFile
+    mv -i myFile myNewFile
+    mv myFile myDir/myNewFile
+    mv myFile ../myNewFile
+    mv myDir1 myDir2/
+    mv myFile myDir/</code></pre>
+            <h2 id="d33316bc-fc05-4b34-830d-b6c4d2289555" class="">tree</h2>
+            <ul id="67fcc0c6-d5bd-4218-88ce-07b8558ec466" class="bulleted-list">
+                <li style="list-style-type: disc;">displays contents of the current directory recursively like a tree</li>
+            </ul>
+            <pre id="c9fd4941-cb51-4a0c-931c-1ce3b72272b0" class="code code-wrap"><code>tree</code></pre>
+            <p id="4e69624f-2164-423f-ae3f-99646e717e58" class=""></p>
+        </div>
+    </article>
+    
+    
+</body>
+</html>
