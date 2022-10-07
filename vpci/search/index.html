@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +10,28 @@
 
 	<script data-goatcounter="https://picafe.goatcounter.com/count" async src="../../count.js"></script>
 	<script src="script.js" defer> </script>
-	<script src="https://kit.fontawesome.com/0c41da93e2.js" crossorigin="anonymous"></script>
+	<script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
 	<!-- favicon links -->
-    <!-- <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon.png"> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../../favicon/site.webmanifest">
-    <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="../../favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+	<!-- <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon.png"> -->
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="../../favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="../../favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 	<style>
 		:root {
 			--bg-img: url("../../unsplash/pawel-czerwinski-1gKh_1661Kk-unsplash.jpg")
 		}
+
 		.search-pos {
 			font-size: 1.7rem;
 			font-weight: bold;
 			z-index: -2;
 		}
+
 		.faq__links {
 			display: flex;
 			flex-direction: column;
@@ -36,47 +39,54 @@
 			gap: .5rem;
 			margin-top: 1rem;
 		}
+
 		.card {
 			border: 1px solid white;
 			border-radius: 10px;
 			background-color: #171421;
-			background-image: linear-gradient(
-				115deg,
-				#e8646a 20%, 
-				#e79881 20%, 
-				#e79881 40%, 
-				#81c19b 40%, 
-				#81c19b 60%, 
-				#709ad2 60%, 
-				#709ad2 80%, 
-				#c58cec 80%);
+			background-image: linear-gradient(115deg,
+					#e8646a 20%,
+					#e79881 20%,
+					#e79881 40%,
+					#81c19b 40%,
+					#81c19b 60%,
+					#709ad2 60%,
+					#709ad2 80%,
+					#c58cec 80%);
 			background-size: cover;
 			padding: .5rem;
 			font-family: 'Inter', 'Helvetica';
 			z-index: inherit;
 		}
-		.card > .main__links{
+
+		.card>.main__links {
 			margin-bottom: .25rem;
 			font-size: 2em;
 		}
-		.card > .description__links{
+
+		.card>.description__links {
 			font-size: 1.2rem;
 			color: #000000;
-			text-decoration: none !important; /* line 195 in notion.css confliction */
+			text-decoration: none !important;
+			/* line 195 in notion.css confliction */
 		}
+
 		.question__links {
 			display: block;
 			color: #000000;
 			font-size: 1.3rem;
 		}
+
 		.trueinvisibility {
-    		display: none;
+			display: none;
 		}
+
 		.whitespace {
 			display: relative;
 			width: 100%;
 			height: 20vh;
 		}
+
 		.search {
 			position: relative;
 			width: 50%;
@@ -86,12 +96,15 @@
 			height: 2rem;
 			border-radius: 60px;
 			border: 1px solid #FEFEFE;
-			background: rgba(255,255,255,0.2);
+			background: rgba(255, 255, 255, 0.2);
 			backdrop-filter: blur(4px) saturate(180%);
 			z-index: 0;
 		}
-		input, select, textarea{
-    		color: #FEFEFE;
+
+		input,
+		select,
+		textarea {
+			color: #FEFEFE;
 			font-family: 'Inter', 'Helvetica';
 			text-align: center;
 		}
@@ -100,32 +113,33 @@
 
 <body>
 	<nav class="navbar">
-		<div class="logo"><i class="fa-brands fa-linux"></i> VPCI Linux</div>
-		<ul class="nav-links">
-			<input type="checkbox" id="checkbox_toggle" />
-			<label for="checkbox_toggle" class="hamburger">&#9776;</label>
-			<div class="menu">
-				<li class="hover-target"><a href="../">Home</a></li>
-				<li class="hover-target"><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
-				<li class="hover-target"><a href="/">About Us</a></li>
-				
-			</div>
-		</ul>
-	</nav>
+        <div class="logo"><span class="iconify" data-icon="flat-color-icons:linux"></span> VPCI Linux</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="https://picafe.dev/vpci">Home</a></li>
+                <li><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
+                <li><a href="/">About Us</a></li>
+				<li><a href="https://picafe.dev/vpci/search">All Posts</a></li>
+            </div>
+        </ul>
+    </nav>
 
 	<div class="box">
-		
-	<label class="search-pos" for="search" title="Type to Find an Article"></label>
-	<input type="search" class="search" data-search>
-		
-	<div class="faq__links" data-user-container></div>
 
-	<template data-user-template>
-		<div class="card">        
-			<a class="question__links" title></a>
-			<a class="description__links" description></a>
-		</div>
-	</template>
+		<label class="search-pos" for="search" title="Type to Find an Article"></label>
+		<input type="search" class="search" data-search>
+
+		<div class="faq__links" data-user-container></div>
+
+		<template data-user-template>
+			<div class="card">
+				<a class="question__links" title></a>
+				<a class="description__links" description></a>
+			</div>
+		</template>
 	</div>
 </body>
+
 </html>
