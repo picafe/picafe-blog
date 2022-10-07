@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../notion.css">
     <title>Introduction to Linux</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="../cursor.js" defer></script>
     <script data-goatcounter="https://picafe.goatcounter.com/count" async src="../count.js"></script>
     <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
     <style>
@@ -31,22 +33,21 @@
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="menu">
-                <li><a href="https://picafe.dev/vpci">Home</a></li>
-                <li><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
-                <li><a href="/">About Us</a></li>
-                <li><a href="https://picafe.dev/vpci/search">All Posts</a></li>
-
+                <li class="hover-target"><a href="https://picafe.dev/vpci">Home</a></li>
+                <li class="hover-target"><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
+                <li class="hover-target"><a href="/">About Us</a></li>
+                <li class="hover-target"><a href="https://picafe.dev/articles">All Posts</a></li>
             </div>
         </ul>
     </nav>
     <article id="9cdedd49-ab43-4584-94b1-54f113c7426b" class="page sans box">
         <header>
-            <img class="page-cover-image" src="https://images.unsplash.com/photo-1663168679840-0a2ed088cbcd" style="object-position: center 50%;" />
-            <div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://www.notion.so/icons/command-line_blue.svg" /></div>
+            <img class="page-cover-image hover-target" src="https://images.unsplash.com/photo-1663168679840-0a2ed088cbcd" style="object-position: center 50%;" />
+            <div class="page-header-icon page-header-icon-with-cover"><img class="icon hover-target" src="https://www.notion.so/icons/command-line_blue.svg" /></div>
             <h1 class="page-title">Command Line Basics</h1>
         </header>
         <div class="page-body">
-            <blockquote id="bd5a5ac0-c3de-4f1e-8660-87fcecb4ba9d" class="">This page’s content is authored by <a href="https://github.com/AvanRocks/VPCI-Linux-Club-Blog">AvanRocks</a></blockquote>
+            <blockquote id="bd5a5ac0-c3de-4f1e-8660-87fcecb4ba9d" class="hover-target">This page’s content is authored by <a href="https://github.com/AvanRocks/VPCI-Linux-Club-Blog">AvanRocks</a></blockquote>
             <p id="28c34214-22a7-45ed-b45f-59b17d5f4c99" class="">The CLI, or <strong>Command Line Interface,</strong> is a text-based way to do stuff on your Linux computer. (Back in the old days, this was actually the <em>only</em> way to interact with the computer).</p>
             <p id="22752a77-f1e4-46b8-acf8-1f2732af60c3" class=""></p>
             <h2 id="c72cf48a-197a-4896-b6eb-08d612c6e100" class="">Terminology</h2>
@@ -116,7 +117,7 @@
                     directories are owned by the root user. In other words, to modify the directories below except home, you need to use <code>sudo</code>.
                 </li>
             </ul>
-            <figure id="e214bc74-a770-4d88-8df4-bd48335b3433" class="image">
+            <figure id="e214bc74-a770-4d88-8df4-bd48335b3433" class="image hover-target">
                 <a href="filesystem.png"><img style="width: 671px;" src="filesystem.png" /></a>
             </figure>
             <h2 id="13b19d47-9fe3-439c-be6e-0d4e51a2df4f" class="">pwd - print working directory</h2>
@@ -162,9 +163,9 @@
             <ul id="8baa975b-67b2-48a9-b58d-b1dba8fd203f" class="bulleted-list">
                 <li style="list-style-type: disc;">you can chain multiple directories like so:</li>
             </ul>
-            <pre id="7440f681-0bdc-495d-8efb-8b8a0a037e2f" class="code code-wrap"><code>cd Documents/notes/</code></pre>
+            <pre id="7440f681-0bdc-495d-8efb-8b8a0a037e2f" class="code code-wrap hover-target"><code>cd Documents/notes/</code></pre>
             <p id="1a3b6c58-ca05-412d-bfae-add96a4c4766" class="">You can even chain ‘..’ like this:</p>
-            <pre id="bb6f80dc-0db9-4be7-8ae5-f46f8f588927" class="code code-wrap"><code>cd ../../../</code></pre>
+            <pre id="bb6f80dc-0db9-4be7-8ae5-f46f8f588927" class="code code-wrap hover-target"><code>cd ../../../</code></pre>
             <ul id="4ac30981-915c-42c4-92f6-f2c1e99127b3" class="bulleted-list">
                 <li style="list-style-type: disc;">
                     you can use ‘absolute’ and ‘relative’ path names of the directories
@@ -200,13 +201,13 @@
             <ul id="958e803d-3659-48a5-b5fe-72ca4f85f418" class="bulleted-list">
                 <li style="list-style-type: disc;">To create a directory:</li>
             </ul>
-            <pre id="f7c6f7bd-77aa-467a-ac30-045be18630e2" class="code code-wrap"><code>mkdir myDir</code></pre>
+            <pre id="f7c6f7bd-77aa-467a-ac30-045be18630e2" class="code code-wrap hover-target"><code>mkdir myDir</code></pre>
             <ul id="45b52548-925e-46d8-a2d0-84fbaa703b2c" class="bulleted-list">
                 <li style="list-style-type: disc;">To create a directory and also create subdirectories:</li>
             </ul>
-            <pre id="961ac976-649e-45e8-88c2-4ba155e7d283" class="code code-wrap"><code>mkdir -p dir1/dir2/dir3</code></pre>
+            <pre id="961ac976-649e-45e8-88c2-4ba155e7d283" class="code code-wrap hover-target"><code>mkdir -p dir1/dir2/dir3</code></pre>
             <h2 id="501ebd1d-3d4f-4d67-acf6-4e8d0faa9226" class="">rmdir (remove directory)</h2>
-            <pre id="c3115b9e-70d1-469a-a686-bf662fbea265" class="code code-wrap"><code>rmdir myDir</code></pre>
+            <pre id="c3115b9e-70d1-469a-a686-bf662fbea265" class="code code-wrap hover-target"><code>rmdir myDir</code></pre>
             <ul id="ce5e27f8-ff42-4187-b25a-6e8f555f2e79" class="bulleted-list">
                 <li style="list-style-type: disc;">rmdir only removes the directory if it&#x27;s empty</li>
             </ul>
@@ -214,10 +215,10 @@
             <ul id="8ebf96a9-31c1-457a-8f4c-526a7dca2398" class="bulleted-list">
                 <li style="list-style-type: disc;">creates an empty file with the specified name</li>
             </ul>
-            <pre id="83a5d68e-61a3-455f-9d38-afe70e8e1299" class="code"><code>touch myFile</code></pre>
+            <pre id="83a5d68e-61a3-455f-9d38-afe70e8e1299" class="code hover-target"><code>touch myFile</code></pre>
             <h2 id="2a0679c5-b840-4631-84d2-cc0e34cbf4e1" class="">ls (some more options for ls)</h2>
             <p id="423ab554-f55f-49cb-a9c3-96caf7f54f37" class="">only shows files with the name “myFile”</p>
-            <pre id="b5320141-d481-49f1-a780-3fc12e911de3" class="code"><code>ls myFile</code></pre>
+            <pre id="b5320141-d481-49f1-a780-3fc12e911de3" class="code hover-target"><code>ls myFile</code></pre>
             <ul id="a37e300b-c313-4b39-8283-67e0f1ca7c69" class="bulleted-list">
                 <li style="list-style-type: disc;">
                     you can use wildcard characters:
@@ -238,7 +239,7 @@
                     </ul>
                 </li>
             </ul>
-            <pre id="08732c44-91cb-48f1-be56-47dc3d828f88" class="code code-wrap"><code>ls myF?le
+            <pre id="08732c44-91cb-48f1-be56-47dc3d828f88" class="code code-wrap hover-target"><code>ls myF?le
     ls myF*
     ls myFile[ab]
     ls myFile[a-z]
@@ -259,7 +260,7 @@
             <ul id="a726b84d-f5dd-4424-866f-f1f0e9a24342" class="bulleted-list">
                 <li style="list-style-type: disc;">&gt; and &gt;&gt; can be used with any command</li>
             </ul>
-            <pre id="8802185d-8906-4150-a63b-1d529f1645e4" class="code code-wrap"><code>echo Hello, world!
+            <pre id="8802185d-8906-4150-a63b-1d529f1645e4" class="code code-wrap hover-target"><code>echo Hello, world!
     echo stuff &gt; myFile
     echo stuff &gt;&gt; myFile</code></pre>
             <h2 id="35a778c9-390b-4d09-afe3-70f043e9e418" class="">cat (concatenate)</h2>
@@ -269,7 +270,7 @@
             <ul id="67ffb7ef-a959-4ee0-9964-a0dca8dcc98c" class="bulleted-list">
                 <li style="list-style-type: disc;">cat -n numbers the lines</li>
             </ul>
-            <pre id="46df9a6d-0cd5-4c6e-8a57-48945c7f854b" class="code code-wrap"><code>cat myFile
+            <pre id="46df9a6d-0cd5-4c6e-8a57-48945c7f854b" class="code code-wrap hover-target"><code>cat myFile
     cat -n myFile</code></pre>
             <h2 id="e6834163-e42f-4079-aa73-6b46a3f7ef08" class="">rm (remove)</h2>
             <ul id="9d29eb79-2895-4fcb-974e-cf888512a90c" class="bulleted-list">
@@ -287,7 +288,7 @@
             <ul id="e2876b61-bd86-4052-bd09-195756d2c3d9" class="bulleted-list">
                 <li style="list-style-type: disc;">you can combine the options. You can do this for any command</li>
             </ul>
-            <pre id="7bff4f7a-56b9-4770-b9e9-f3e1c697f47f" class="code code-wrap"><code>rm myFile
+            <pre id="7bff4f7a-56b9-4770-b9e9-f3e1c697f47f" class="code code-wrap hover-target"><code>rm myFile
     rm -i myFile
     rm -r myDir
     rm -ir myDir</code></pre>
@@ -310,7 +311,7 @@
             <ul id="db87c230-53e4-464c-8ffc-28da611b75f1" class="bulleted-list">
                 <li style="list-style-type: disc;">always use cp -i</li>
             </ul>
-            <pre id="4ad7d640-53a2-40a5-aee1-4461604cbf1f" class="code code-wrap"><code>cp myFile myCopiedFile
+            <pre id="4ad7d640-53a2-40a5-aee1-4461604cbf1f" class="code code-wrap hover-target"><code>cp myFile myCopiedFile
     cp -i myFile myNewFile
     cp -r myFile myNewFile
     cp myFile otherDir/overHere/myCopiedFile</code></pre>
@@ -339,7 +340,7 @@
             <ul id="5824498a-3a17-45f6-8db1-bdadaffe0544" class="bulleted-list">
                 <li style="list-style-type: disc;">if the source is a file, and the destination is a directory, the file gets moved into the destination directory and retains its name</li>
             </ul>
-            <pre id="25ab3671-1b0a-4378-86fb-f01409889ea6" class="code code-wrap"><code>mv myFile myNewFile
+            <pre id="25ab3671-1b0a-4378-86fb-f01409889ea6" class="code code-wrap hover-target"><code>mv myFile myNewFile
     mv -i myFile myNewFile
     mv myFile myDir/myNewFile
     mv myFile ../myNewFile
@@ -349,11 +350,12 @@
             <ul id="67fcc0c6-d5bd-4218-88ce-07b8558ec466" class="bulleted-list">
                 <li style="list-style-type: disc;">displays contents of the current directory recursively like a tree</li>
             </ul>
-            <pre id="c9fd4941-cb51-4a0c-931c-1ce3b72272b0" class="code code-wrap"><code>tree</code></pre>
+            <pre id="c9fd4941-cb51-4a0c-931c-1ce3b72272b0" class="code code-wrap hover-target"><code>tree</code></pre>
             <p id="4e69624f-2164-423f-ae3f-99646e717e58" class=""></p>
         </div>
     </article>
-    
-    
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor2" id="cursor2"></div>
+    <div class="cursor3" id="cursor3"></div>
 </body>
 </html>

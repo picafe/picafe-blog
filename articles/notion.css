@@ -1,5 +1,6 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Inter');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=JetBrains+Mono');
 
 html {
 	-webkit-print-color-adjust: exact;
@@ -42,6 +43,9 @@ body {
 	padding: 5%;
 }
 
+/* #Navbar
+================================================== */
+
 .navbar {
 	display: flex;
 	align-items: center;
@@ -51,7 +55,7 @@ body {
 	backdrop-filter: blur(8px);
 	background-size: 100%;
 	color: #FEFEFE;
-	font-family: 'Inter', 'Helvetica';
+	font-family: 'Jetbrains Mono', "Source Code Pro", Helvetica, Arial, sans-serif;
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -204,13 +208,63 @@ input[type=checkbox] {
 	}
 }
 
-.bp-grad {
-	background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	background-size: cover;
+/* #Cursor
+================================================== */
+
+.cursor,
+.cursor2,
+.cursor3 {
+	position: fixed;
+	border-radius: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	pointer-events: none;
+	left: -100px;
+	top: 50%
 }
+
+.cursor {
+	background-color: #fff;
+	height: 0;
+	width: 0;
+	z-index: 99999;
+}
+
+.cursor2,
+.cursor3 {
+	height: 36px;
+	width: 36px;
+	z-index: 99998;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out
+}
+
+.cursor2.hover,
+.cursor3.hover {
+	-webkit-transform: scale(2) translateX(-25%) translateY(-25%);
+	transform: scale(2) translateX(-25%) translateY(-25%);
+	border: none
+}
+
+.cursor2 {
+	border: 2px solid #fff;
+	box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+}
+
+.cursor2.hover {
+	background: rgba(255, 255, 255, .1);
+	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 1200px) {
+	.cursor,
+	.cursor2,
+	.cursor3 {
+		display: none
+	}
+}
+
+/* #Begin Styles
+================================================== */
 
 a,
 a.visited {

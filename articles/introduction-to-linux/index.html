@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../notion.css">
     <title>Introduction to Linux</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="../cursor.js" defer></script>
     <script data-goatcounter="https://picafe.goatcounter.com/count" async src="../count.js"></script>
     <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
     <style>
@@ -26,42 +28,41 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><span class="iconify" data-icon="flat-color-icons:linux"></span> VPCI Linux</div>
+        <div class="logo"><span class="iconify" data-icon="flat-color-icons:linux"></span>VPCI Linux</div>
         <ul class="nav-links">
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="menu">
-                <li><a href="https://picafe.dev/vpci">Home</a></li>
-                <li><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
-                <li><a href="/">About Us</a></li>
-                <li><a href="https://picafe.dev/vpci/search">All Posts</a></li>
-
+                <li class="hover-target"><a href="https://picafe.dev/vpci">Home</a></li>
+                <li class="hover-target"><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
+                <li class="hover-target"><a href="/">About Us</a></li>
+                <li class="hover-target"><a href="https://picafe.dev/articles">All Posts</a></li>
             </div>
         </ul>
     </nav>
     <article id="c2cf6969-8455-4e98-91c9-ca0a0295da75" class="page sans box">
         <header>
-            <img class="page-cover-image" src="https://images.unsplash.com/photo-1663875967691-15b02702931c" style="object-position: center 41.43%;" />
-            <div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://www.notion.so/icons/computer-chip_red.svg" /></div>
+            <img class="page-cover-image hover-target" src="https://images.unsplash.com/photo-1663875967691-15b02702931c" style="object-position: center 41.43%;" />
+            <div class="page-header-icon page-header-icon-with-cover"><img class="icon hover-target" src="https://www.notion.so/icons/computer-chip_red.svg" /></div>
             <h1 class="page-title"><strong>Introduction to Linux</strong></h1>
         </header>
         <div class="page-body">
-            <blockquote id="9d536a1e-d0a9-4338-97f9-1f6fb7128f20" class="">This page’s content is authored by <a href="https://github.com/AvanRocks/VPCI-Linux-Club-Blog">AvanRocks</a>.</blockquote>
+            <blockquote id="9d536a1e-d0a9-4338-97f9-1f6fb7128f20" class="hover-target">This page’s content is authored by <a href="https://github.com/AvanRocks/VPCI-Linux-Club-Blog">AvanRocks</a>.</blockquote>
             <p id="49d3c9bf-b516-44ff-9de7-4d6c3539ebe1" class="">
                 Linux is a computer operating system (OS). Windows and macOS are also OSes. However, Linux is different than those OSes in numerous ways. It’s insufficient to simply say that Linux is an OS, as there is much more to say about
                 it.
             </p>
             <p id="8c09e31a-c7b0-473e-9eec-3722320f9949" class="">Here’s an example of what a Linux desktop could look like.</p>
-            <figure id="1e3f7f44-dae5-4dc2-96f1-5512dbf188f3" class="image">
-                <a href="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/linux-mint.png"><img src="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/linux-mint.png" /></a>
+            <figure id="1e3f7f44-dae5-4dc2-96f1-5512dbf188f3" class="image hover-target">
+                <a href="linux-mint.png"><img src="linux-mint.png" /></a>
             </figure>
             <p id="d08bbd1d-e794-4086-bce9-d6d064b767e0" class="">However, it doesn’t have to look like that. You could make it look like this:</p>
-            <figure id="3c6d6b0a-6b56-42f2-b086-49df5d8a8f9c" class="image">
-                <a href="https://raw.githubusercontent.com/AlphaTechnolog/dotfiles/welcome/assets/awesomewm.png"><img src="https://raw.githubusercontent.com/AlphaTechnolog/dotfiles/welcome/assets/awesomewm.png" /></a>
+            <figure id="3c6d6b0a-6b56-42f2-b086-49df5d8a8f9c" class="image hover-target">
+                <a href="https://github.com/AlphaTechnolog/dotfiles/tree/awesomewm"><img src="awesomewm.png" /></a>
             </figure>
             <p id="0df45715-db1b-4850-a6cf-98e3a3f1d7b0" class="">Or even this!:</p>
-            <figure id="82bef5ee-72e4-42e6-a772-5e160f944534" class="image">
-                <a href="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/terminal.jpg"><img src="https://avanrocks.github.io/VPCI-Linux-Club-Blog/img/terminal.jpg" /></a>
+            <figure id="82bef5ee-72e4-42e6-a772-5e160f944534" class="image hover-target">
+                <a href="terminal.jpg"><img src="terminal.jpg" /></a>
             </figure>
             <p id="77e7f0af-1197-44af-84e5-5a7c2179d520" class="">
                 Don’t be intimidated by the terminal in the above images. It’s OK if you don’t know what it is. In fact, in this article, I may mention terms you’ve never heard of, but that’s totally okay. I’m going to gloss over many concepts
@@ -83,7 +84,7 @@
                 You can automate frequent tasks and use text files, streams, and pipes to do stuff you would have never imagined was possible. It’s just <strong>easier</strong> to do complex (and normal) stuff once you learn how to use it.
                 There’s a pithy quote that sums it up in an amusing way:
             </p>
-            <blockquote id="c092386c-a1d2-4af6-9150-c1cbfe53726f" class="">“GUIs make difficult things easy, and easy things impossible”</blockquote>
+            <blockquote id="c092386c-a1d2-4af6-9150-c1cbfe53726f" class="hover-target">“GUIs make difficult things easy, and easy things impossible”</blockquote>
             <h2 id="ee0807fa-6b61-42ec-875d-6ce3c20faa37" class="">3. Customizable</h2>
             <p id="f31c1c73-1871-4540-ab37-55d0d5fe6f55" class="">
                 Not just customizable in the sense that you can change the wallpaper or change the location of the dock, but rather you can change <em>any</em> aspect of your system. For example, you can change the window manager, set custom
@@ -167,13 +168,15 @@
                 know that it’s there.
             </p>
             <p id="35df9418-a338-47af-9677-1e2d3e242b06" class="">Lastly, I’d like to leave you with an amusing quote about Linux that often floats around the internet:</p>
-            <figure class="block-color-gray_background callout" style="white-space: pre-wrap; display: flex;" id="7badbad2-5755-4164-bcc5-5cd11aef4b01">
+            <figure class="block-color-gray_background callout hover-target" style="white-space: pre-wrap; display: flex;" id="7badbad2-5755-4164-bcc5-5cd11aef4b01">
                 <span class="icon">🤔</span>
                 <div style="width: 100%;">Linux is user-friendly. It’s just selective about who its friends are.</div>
             </figure>
             <p id="52c4dd1b-88cb-47f5-8689-7b0ea8f8707d" class=""></p>
         </div>
     </article>
-    
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor2" id="cursor2"></div>
+    <div class="cursor3" id="cursor3"></div>
 </body>
 </html>
