@@ -123,9 +123,6 @@ h5,
 /* #Cursor
 ================================================== */
 
-* {
-  cursor: none;
-}
 
 .cursor {
   --size: 8px;
@@ -143,14 +140,9 @@ h5,
   border: 1px solid #fff;
   --size: 40px;
   transition: top .2s, left .2s,
-    width .2s, height .2s,
-    background-color .2s, border-color 0.2s;
+  width .2s, height .2s,
+  background-color .2s, border-color 0.2s;
   transition-timing-function: ease-out;
-}
-
-.cursor.cursor-dot {
-  background: #7f6ed2;
-  transition: width .2s, height .2s;
 }
 
 .cursor-shadow.active {
@@ -158,10 +150,6 @@ h5,
   border-color: rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, .1);
   backdrop-filter: saturate(2);
-}
-
-.cursor-dot.active {
-  --size: 0;
 }
 
 a {
@@ -209,16 +197,6 @@ a:hover {
 /* #Blog cursor images
 ================================================== */
 
-.cursor.cursor-dot.active-blog-post-1,
-.cursor.cursor-dot.active-blog-post-2,
-.cursor.cursor-dot.active-blog-post-3,
-.cursor.cursor-dot.active-blog-post-4,
-.cursor.cursor-dot.active-blog-post-5,
-.cursor.cursor-dot.active-blog-post-6,
-.cursor.cursor-dot.active-blog-post-7 {
-  opacity: 0;
-}
-
 .cursor-shadow.active-blog-post-1,
 .cursor-shadow.active-blog-post-2,
 .cursor-shadow.active-blog-post-3,
@@ -238,19 +216,19 @@ a:hover {
 }
 
 .cursor-shadow.active-blog-post-1 {
-  background-image: url('https://images.unsplash.com/photo-1529346378633-c2b2a059c367');
+  background-image: url('https://images.unsplash.com/photo-1529346378633-c2b2a059c367?w=200&fit=max');
 }
 
 .cursor-shadow.active-blog-post-2 {
-  background-image: url('https://images.unsplash.com/photo-1615678857339-4e7e51ce22db');
+  background-image: url('https://images.unsplash.com/photo-1615678857339-4e7e51ce22db?w=200&fit=max');
 }
 
 .cursor-shadow.active-blog-post-3 {
-  background-image: url('http://ivang-design.com/alke/img/blog/3.jpg');
+  background-image: url('https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=200&fit=max');
 }
 
 .cursor-shadow.active-blog-post-4 {
-  background-image: url('http://ivang-design.com/alke/img/blog/4.jpg');
+  background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=200&fit=max');
 }
 
 /* .cursor-shadow.active-blog-post-5 {
@@ -351,6 +329,12 @@ a:hover {
 .logo {
   font-size: 32px;
   font-weight: bold;
+}
+
+.iconify {
+	font-size: 40px;
+	position: relative;
+	top: 8px;
 }
 
 .menu {
