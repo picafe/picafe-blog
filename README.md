@@ -1,3 +1,3 @@
 # picafe-blog
-## Welcome to my blog!
-This is where I'll be actively developing my blog and hosting with netlify. Feel free to contribute or create an issue, the url is https://picafe.dev
+## Welcome to the VPCI blog!
+This is the official blog for the VPCI Linux Club, and my personal blog where I write some things.
