@@ -97,3 +97,4 @@ background-image: linear-gradient(
             #04a5e5 66.666%, 
             #04a5e5 83.333%, 
             #7287fd 83.333%);
+			abc
