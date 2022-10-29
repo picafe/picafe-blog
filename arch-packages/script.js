@@ -92,11 +92,11 @@ const notionDocId = "cfb044c663824532b5dc12f170d7d49d";
 fetch("https://api.picafe.dev/html?id=" + notionDocId)
   .then((res) => res.text())
   .then((text) => {
-    console.log(text);
-    const trimmed = text.substring(
-      text.indexOf("<body>") + 6,
-      text.lastIndexOf("</body>")
-    );
-    console.log(trimmed);
+    // console.log(text);
+    // const trimmed = text.substring(
+    //   text.indexOf("<body>") + 6,
+    //   text.lastIndexOf("</body>")
+    // );
+    // console.log(trimmed);
     document.querySelector("article").innerHTML = text;
   });
