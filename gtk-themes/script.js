@@ -86,7 +86,7 @@ tag_id.innerHTML = `<nav class="navbar">
   });
 })(jQuery);
 
-const notionDocId = "cfb044c663824532b5dc12f170d7d49d";
+const notionDocId = "0e67d14af1bf4bd09b2a46d8b1c10aa0";
 
 //api is forked from https://github.com/benborgers/potion
 fetch("https://api.picafe.dev/html?id=" + notionDocId)
