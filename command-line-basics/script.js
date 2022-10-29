@@ -1,18 +1,3 @@
-const tag_id = document.getElementById("nav");
-tag_id.innerHTML = `<nav class="navbar">
-<div class="logo"><span class="iconify" data-icon="flat-color-icons:linux"></span>VPCI Linux</div>
-<ul class="nav-links">
-    <input type="checkbox" id="checkbox_toggle" />
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-    <div class="menu">
-        <li class="hover-target"><a href="">Home</a></li>
-        <li class="hover-target"><a href="">Join Us</a></li>
-        <li class="hover-target"><a href="">About Us</a></li>
-        <li class="hover-target"><a href="">All Posts</a></li>
-    </div>
-</ul>
-</nav>`;
-
 (function ($) {
   "use strict";
   document
