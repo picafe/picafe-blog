@@ -1,20 +1,3 @@
-
-const tag_id = document.getElementById('nav');
-tag_id.innerHTML = `<nav class="navbar">
-<div class="logo"><span class="iconify" data-icon="flat-color-icons:linux"></span>VPCI Linux</div>
-<ul class="nav-links">
-    <input type="checkbox" id="checkbox_toggle" />
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-    <div class="menu">
-        <li class="hover-target"><a href="https://picafe.dev/vpci">Home</a></li>
-        <li class="hover-target"><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
-        <li class="hover-target"><a href="https://picafe.dev/about-us">About Us</a></li>
-        <li class="hover-target"><a href="https://picafe.dev/articles">All Posts</a></li>
-    </div>
-</ul>
-</nav>`;
-
-
 (function($) { "use strict";
 document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
     t.style.left = n.clientX + "px", 
