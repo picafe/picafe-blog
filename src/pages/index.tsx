@@ -9,7 +9,7 @@ import {
 import { Hero } from "../components/homepage/Hero";
 import { Greeting } from "../components/homepage/Greeting";
 
-import avatar from "./assets/index/avatar.png";
+import avatar from "./assets/index/avatar.jpg";
 import AboutUsDesc from "./assets/index/_about-us.md";
 
 const socialLinks: SocialLinkData[] = [

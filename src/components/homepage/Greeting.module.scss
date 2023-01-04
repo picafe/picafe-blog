@@ -1,78 +1,59 @@
-// credit to https://codepen.io/pokecoder/pen/YzxmMrz for this code. (slightly mofified)
+// credit to https://codepen.io/ClaireLarsen/pen/XmVyVX for this code. (slightly mofified)
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-.greetingContainer {
+.container {
+  font-family: Arial;
+  height: 100%;
+  font-weight: 800;
   margin: 0;
   padding: 0;
-}
-
-.greetingContainer {
-  background: transparent;
-  font-size: 2vmin;
-  font-family: JetBrains Mono, monospace;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #e4bb68;
 }
 
-.string {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  animation: move 8s infinite;
+.welcome {
+  display: block;
+  font: 10.5em 'Montserrat';
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
 }
 
-.greeting {
-  position: relative;
-  top: 8.6vmin;
-  animation: white-out 10s infinite;
+.textCopy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
 }
 
-.closure::after {
-  content: '';
-  position: absolute;
-  height: 13vmin;
-  width: 43vmin;
-  background: #101010;
-  transform: translate(-47vmin, -12.5vmin);
+.textCopy:nth-child(1){
+	stroke: #533747;
+	animation-delay: -1;
 }
 
-.closure::before {
-  content: '';
-  position: absolute;
-  height: 15vmin;
-  width: 44vmin;
-  background: #101010;
-  transform: translate(-43vmin, 5vmin);
+.textCopy:nth-child(2){
+	stroke: #5f506b;
+	animation-delay: -2s;
 }
 
-.en {
-  color: #fa8231;
+.textCopy:nth-child(3){
+	stroke: #6a6b83;
+	animation-delay: -3s;
 }
 
-.fr {
-  color: white;
+.textCopy:nth-child(4){
+	stroke: #76949f;
+	animation-delay: -4s;
 }
 
-.de {
-  color: #c678dd;
+.textCopy:nth-child(5){
+	stroke: #86bbbd;
+	animation-delay: -5s;
 }
 
-.it {
-  color: #a9b0bd;
-}
-
-@keyframes move {
-  25% {
-    transform: translatey(-2vmin);
-    opacity: 1;
-  }
-  50% {
-    transform: translatey(-8.5vmin);
-  }
-  75% {
-    transform: translatey(-15vmin);
-  }
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
 }
