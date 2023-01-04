@@ -123,7 +123,7 @@ const config = {
               },
               {
                 label: "Guides",
-                to: "/docs",
+                to: "/guides",
               },
               {
                 label: "Featured Apps",
