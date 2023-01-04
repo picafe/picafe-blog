@@ -1,0 +1,78 @@
+// credit to https://codepen.io/pokecoder/pen/YzxmMrz for this code. (slightly mofified)
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
+.greetingContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.greetingContainer {
+  background: transparent;
+  font-size: 2vmin;
+  font-family: JetBrains Mono, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e4bb68;
+}
+
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 8s infinite;
+}
+
+.greeting {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 10s infinite;
+}
+
+.closure::after {
+  content: '';
+  position: absolute;
+  height: 13vmin;
+  width: 43vmin;
+  background: #101010;
+  transform: translate(-47vmin, -12.5vmin);
+}
+
+.closure::before {
+  content: '';
+  position: absolute;
+  height: 15vmin;
+  width: 44vmin;
+  background: #101010;
+  transform: translate(-43vmin, 5vmin);
+}
+
+.en {
+  color: #fa8231;
+}
+
+.fr {
+  color: white;
+}
+
+.de {
+  color: #c678dd;
+}
+
+.it {
+  color: #a9b0bd;
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-2vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-8.5vmin);
+  }
+  75% {
+    transform: translatey(-15vmin);
+  }
+}

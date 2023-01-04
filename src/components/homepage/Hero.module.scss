@@ -1,0 +1,56 @@
+@import "../../css/mixins";
+
+.heroBanner {
+  padding: 10rem 0 11rem;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 24.1% 68.8%, rgba(30, 30, 45, 1) 0%, rgba(0, 0, 0, 1) 99.4%);
+  color: #fff;
+  margin-bottom: 4rem;
+  padding-left: 6rem;
+  padding-right: 2rem;
+
+  @include small-size {
+    padding: 4rem 2rem;
+  }
+}
+
+.title {
+  font-size: 4rem;
+  text-shadow: 3px 0px 30px rgba(0, 0, 0, 0.2);
+
+  @include small-size {
+    font-size: 2rem;
+  }
+}
+
+.subtitle {
+  margin: 0;
+
+  @include small-size {
+    font-size: 1.2rem;
+  }
+}
+
+.highlighted {
+  background: linear-gradient(to left, #0054ad 0%, #b8fb3c 100%);
+  background-clip: text;
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
