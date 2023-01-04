@@ -3,5 +3,10 @@
     publish = "build/"
     environment = { NODE_VERSION = "18" }
 
+[context.deploy-preview]
+    command = "npm run build"
+    publish = "build/"
+    environment = { NODE_VERSION = "19" }
+
 [context.branch-deploy]
     publish = "."
