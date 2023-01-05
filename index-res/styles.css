@@ -102,7 +102,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url("../unsplash/pawel-czerwinski-4jZ4k_NY7A4-unsplash.jpg");
+  background: url("../unsplash/pawel-czerwinski-uXy0UbFwoXE-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -154,18 +154,18 @@ body {
   }
 }
 
-.about-section {
+.showcase {
   padding: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-image: url('../unsplash/pawel-czerwinski-cFT6jboY16w-unsplash.jpg');
+  background-image: url('../unsplash/pawel-czerwinski-Y8Y_s90SK3A-unsplash.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 
 }
-.about-section p {
+.showcase p {
   margin-bottom: 5rem;
 }
 
@@ -174,8 +174,7 @@ body {
 }
 
 #about-us {
-  background-image: url('../unsplash/pawel-czerwinski-NjReyECain0-unsplash.jpg');
-  background-position: center;
+  background-image: url('../unsplash/pawel-czerwinski-Eru5-VMQZT8-unsplash.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
