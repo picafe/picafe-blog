@@ -10,3 +10,10 @@
 
 [context.branch-deploy]
     publish = "."
+
+[[redirects]]
+    from = "/vpci"
+    to = "https://vpci.picafe.dev/"
+    status = 301
+    force = true
+    conditions = {Country = ["CA"]}
