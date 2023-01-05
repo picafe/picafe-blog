@@ -108,6 +108,9 @@
 			font-family: 'Inter', 'Helvetica';
 			text-align: center;
 		}
+		input::placeholder {
+			font-family: 'Inter', 'Helvetica';
+		}
 	</style>
 </head>
 
@@ -118,10 +121,9 @@
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="menu">
-                <li><a href="https://picafe.dev/vpci">Home</a></li>
-                <li><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
-                <li><a href="https://picafe.dev/about-us">About Us</a></li>
-				<li><a href="https://picafe.dev/articles">All Posts</a></li>
+                <li class="hover-target"><a href="../">Home</a></li>
+                <li class="hover-target"><a href="https://forms.gle/51yfmUmuiEpcbqNu8">Join Us</a></li>
+                <li class="hover-target"><a href="">All Posts</a></li>
             </div>
         </ul>
     </nav>
@@ -129,7 +131,7 @@
 	<div class="box">
 
 		<label class="search-pos" for="search" title="Type to Find an Article"></label>
-		<input type="search" class="search" data-search>
+		<input type="search" class="search" data-search placeholder="Search Here">
 
 		<div class="faq__links" data-user-container></div>
 
