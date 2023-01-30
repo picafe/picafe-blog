@@ -41,7 +41,7 @@
     "sass": "^1.57.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^2.0.0",
+    "@docusaurus/module-type-aliases": "^2.3.0",
     "@tsconfig/docusaurus": "^1.0.5",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "eslint": "^8.32.0",
