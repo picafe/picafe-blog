@@ -143,11 +143,11 @@ const config = {
         ],
         copyright: `Copyright © 2022-${new Date().getFullYear()} picafe blog`,
       },
-      // algolia: {
-      //   appId: "5DLGGOZ8KA",
-      //   apiKey: "67ab853aa6285e51112a649d3cb51928",
-      //   indexName: "kosiec",
-      // },
+       algolia: {
+         appId: "LNRD4R1PWW",
+         apiKey: "f3cb447c78446ce74a4aec184d27d543",
+         indexName: "picafe",
+       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
