@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+/* You can override the default Infima variables here. */
+:root {
+  color: #4c4f69;
+  --ifm-background-color: #e6e9ef;
+  --ifm-background-surface-color: #eff1f5;
+  --ifm-color-primary: #8839ef;
+  --ifm-color-primary-dark: #781eed;
+  --ifm-color-primary-darker: #7013e9;
+  --ifm-color-primary-darkest: #5c0fc0;
+  --ifm-color-primary-light: #9854f1;
+  --ifm-color-primary-lighter: #a162f2;
+  --ifm-color-primary-lightest: #b98bf6;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-font-size-base: 17px;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-footer-background-color: #eff1f5;
+  --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 3);
+  --ifm-global-radius: 0.3rem;
+  --hero-background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  --hero-highlighted: linear-gradient(to left, #09203f 0%, #537895 100%);
+}
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  color: #cdd6f4;
+  --ifm-color-primary: #cba6f7;
+  --ifm-color-primary-dark: #b580f4;
+  --ifm-color-primary-darker: #aa6df2;
+  --ifm-color-primary-darkest: #8934ed;
+  --ifm-color-primary-light: #e1ccfa;
+  --ifm-color-primary-lighter: #ecdffc;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-footer-background-color: #1a1a1a;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --hero-background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgba(30, 30, 45, 1) 0%,
+    rgba(0, 0, 0, 1) 99.4%
+  );
+  --hero-highlighted: linear-gradient(to left, #0054ad 0%, #b8fb3c 100%);
+}
+html[data-theme="dark"] {
+  --ifm-background-color: #181825;
+  --ifm-background-surface-color: #1e1e2e;
+  --ifm-footer-background-color: #1e1e2e;
+}
+html[data-theme="dark"] .navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+.img-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footer {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+.footer__bottom {
+  margin-top: 4rem;
+}
+.button--outline:focus {
+  --ifm-button-background-color: var(--ifm-button-border-color);
+}
+.button--outline.button--primary:focus {
+  --ifm-button-color: var(--ifm-font-color-base-inverse);
+}
+.button {
+  margin-right: 1rem;
+}
+.button__icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 3px;
+  fill: var(--ifm-button-color);
+}
+.button--secondary .button__icon {
+  fill: var(--ifm-color-gray-900);
+}
+[data-theme="dark"] .button--secondary .button__icon {
+  fill: var(--ifm-font-color-base);
+}
+[data-theme="dark"] .button--outline:hover .button__icon,
+[data-theme="dark"] .button--outline:active .button__icon,
+[data-theme="dark"] .button--outline:focus .button__icon,
+[data-theme="dark"] .button--outline.button--active .button__icon {
+  fill: var(--ifm-font-color-base-inverse);
+}
+.DocSearch {
+  /* --docsearch-primary-color: var(--ifm-color-primary);
+	 */
+  /* --docsearch-text-color: var(--ifm-font-color-base);
+	 */
+}
+[data-theme="light"] .DocSearch {
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(94, 100, 112, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-secondary);
+  --docsearch-searchbox-focus-background: var(--ifm-color-white);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-white);
+  --docsearch-hit-background: var(--ifm-color-white);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-color-white);
+}
+[data-theme="dark"] .DocSearch {
+  --docsearch-text-color: var(--ifm-font-color-base);
+  --docsearch-muted-color: var(--ifm-color-secondary-darkest);
+  --docsearch-container-background: rgba(47, 55, 69, 0.7);
+  /* Modal */
+  --docsearch-modal-background: var(--ifm-background-color);
+  /* Search box */
+  --docsearch-searchbox-background: var(--ifm-color-emphasis-100);
+  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  /* Hit */
+  --docsearch-hit-color: var(--ifm-font-color-base);
+  --docsearch-hit-active-color: var(--ifm-color-black);
+  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  /* Footer */
+  --docsearch-footer-background: var(--ifm-background-surface-color);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
+}
+
+/* HERO CSS */
+
+.heroBanner {
+  padding: 10rem 0 11rem;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  background: var(--hero-background);
+  color: #fff;
+  margin-bottom: 4rem;
+  padding-left: 6rem;
+  padding-right: 2rem;
+}
+.title {
+  font-size: 4rem;
+  text-shadow: 3px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.subtitle {
+  color: var(--ifm-font-color-base);
+  margin: 0;
+}
+.highlighted {
+  background: var(--hero-highlighted);
+  background-clip: text;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .heroBanner {
+    padding: 2rem 0 2rem;
+  }
+}
+
+/* END HERO CSS */

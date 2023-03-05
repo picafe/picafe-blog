@@ -2,6 +2,7 @@
 sidebar: auto
 sidebarDepth: 2
 ---
+
 # Introduction to Linux
 
 Date: October 29, 2022
@@ -24,23 +25,21 @@ Don’t be intimidated by the terminal in the above images. It’s OK if you don
 
 ## Why use Linux?
 
-
 ### 1. Free
 
 It’s completely free to install and use. For Windows, you have to pay a license fee (like $100 or so) which is usually included in the cost of your computer. Since Linux is free, you can install it by yourself on your computer without paying.
 
-But that’s not all that I mean by “free”. The source code for Linux is “open source”. This means that anyone can view the code that makes Linux work. It also has no copyright restrictions. You are free to copy, modify, and distribute it as you wish. Even if *you* aren’t a programmer, someone else *is*, and you’d be surprised how much of a difference that makes. I’ll explain this in more detail later.
+But that’s not all that I mean by “free”. The source code for Linux is “open source”. This means that anyone can view the code that makes Linux work. It also has no copyright restrictions. You are free to copy, modify, and distribute it as you wish. Even if _you_ aren’t a programmer, someone else _is_, and you’d be surprised how much of a difference that makes. I’ll explain this in more detail later.
 
 ### 2. Extensible
 
 This is a buzzword that’s thrown around a lot, so let me be specific. In Linux, you are able to use a command line to do regular computer stuff. The command line seems scary at first, but in reality, it’s very simple and usable. You can automate frequent tasks and use text files, streams, and pipes to do stuff you would have never imagined was possible. It’s just **easier** to do complex (and normal) stuff once you learn how to use it. There’s a pithy quote that sums it up in an amusing way:
 
 > “GUIs make difficult things easy, and easy things impossible”
-> 
 
 ### 3. Customizable
 
-Not just customizable in the sense that you can change the wallpaper or change the location of the dock, but rather you can change *any* aspect of your system. For example, you can change the window manager, set custom keybindings (to do virtually anything you want), use whatever software you want, etc.
+Not just customizable in the sense that you can change the wallpaper or change the location of the dock, but rather you can change _any_ aspect of your system. For example, you can change the window manager, set custom keybindings (to do virtually anything you want), use whatever software you want, etc.
 
 ### 4. Lightweight
 
@@ -52,7 +51,7 @@ You can customize your workflow to be tailored to you so that you can be as effi
 
 ### 6. Control
 
-**You** control your Linux computer, not the other way around. The simplest example is that there are no forced updates on Linux, but it’s much more than that. You have the authority to make the computer do whatever you want; there’s no handholding (although there can be if you so choose). You control what background programs are running, how your computer handles key repeats, etc. This control entails 2 things: Privacy and Security. Since Linux is so user-controlled, it’s hard for it to collect data about you without you (or other Linux users) noticing and alerting the community. It’s really as if **you** own your computer. The security aspect comes mainly because hackers are disincentivized to write malicious software for Linux. Only a small fraction of computer users run Linux, and those who do run it likely know what they are doing and are thus less likely 
+**You** control your Linux computer, not the other way around. The simplest example is that there are no forced updates on Linux, but it’s much more than that. You have the authority to make the computer do whatever you want; there’s no handholding (although there can be if you so choose). You control what background programs are running, how your computer handles key repeats, etc. This control entails 2 things: Privacy and Security. Since Linux is so user-controlled, it’s hard for it to collect data about you without you (or other Linux users) noticing and alerting the community. It’s really as if **you** own your computer. The security aspect comes mainly because hackers are disincentivized to write malicious software for Linux. Only a small fraction of computer users run Linux, and those who do run it likely know what they are doing and are thus less likely
 to fall victim to their attack.
 
 Additionally, most Linux programs are “open-source”, which means their code is publicly available for anyone to read. This means that if the author tries to sneak in some malicious code, someone will copy the entire code of the software, remove the malicious code, and re-publish it for everyone to use. Realistically, this means that malicious code doesn’t make it into the software in the first place since everyone knows that there’s no point in trying.
@@ -71,7 +70,7 @@ This is the most important reason to use Linux. It’s so interesting learning a
 
 Let me explain what Free and Open Source Software (or FOSS) is. You are likely to hear this abbreviation a lot in the context of Linux. You might even hear of “Libre Software”, which means the same thing. FOSS refers to a type of software (or more specifically, a type of software licence) which allows anyone to run, copy, modify, and distribute it with no restrictions. This is a complicated and controversial topic, but I’ll try to keep it short here. Anyone who knows how to can download the source code of a FOSS program (which is open-source), make changes, and release it to the public (which is a process known as ‘forking’). The biggest point here is that **EVEN IF YOU DON’T KNOW HOW TO PROGRAM**, someone else **DOES**, so you can still benefit from it.
 
-Two more related abbreviations you are likely to run into are **GNU** and **FSF**. The FSF or Free Software Foundation is a non-profit that advocates for free software. GNU stands for “GNU’s Not Unix” (it’s a recursive acronym. Look it up, it’s pretty cool), and it’s the name that the FSF gave to their free operating system, which we call Linux. The FSF wrote a bunch of the core programs that you run on Linux, but we ended up calling it Linux instead of GNU or GNU/Linux for various reasons that don’t really matter (You can always look it up!). 
+Two more related abbreviations you are likely to run into are **GNU** and **FSF**. The FSF or Free Software Foundation is a non-profit that advocates for free software. GNU stands for “GNU’s Not Unix” (it’s a recursive acronym. Look it up, it’s pretty cool), and it’s the name that the FSF gave to their free operating system, which we call Linux. The FSF wrote a bunch of the core programs that you run on Linux, but we ended up calling it Linux instead of GNU or GNU/Linux for various reasons that don’t really matter (You can always look it up!).
 
 ## Cons
 
@@ -79,7 +78,7 @@ Now let me mention a few disadvantages of using Linux. I’m not saying that you
 
 ### 1. Steep Learning Curve
 
-When you first get started with Linux, there is a lot to learn. To get the most out of Linux, you will need to learn many concepts and terms at first, but later on, you can reap the benefits. The biggest 
+When you first get started with Linux, there is a lot to learn. To get the most out of Linux, you will need to learn many concepts and terms at first, but later on, you can reap the benefits. The biggest
 obstacle is learning the jargon: It sounds complex and difficult, but it’s really not. At first, you may think Linux is some “scary hacker stuff”, but you will come to realize that’s not the case. Rather, Linux can be a very usable OS if you know how to use it. When I started using Linux, I had absolutely no clue what I was doing either!
 
 ### 2. Takes time to learn

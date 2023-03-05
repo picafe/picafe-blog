@@ -1,0 +1,19 @@
+.avatarContainer {
+  margin-left: 2rem;
+}
+
+.avatar {
+  display: block;
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .avatar {
+    margin: 0 auto;
+  }
+  .avatarContainer {
+    margin: 2rem 0 0;
+  }
+}

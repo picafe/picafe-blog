@@ -2,13 +2,14 @@
 sidebar: auto
 sidebarDepth: 2
 ---
+
 # Command Line Basics
 
 Date: October 29, 2022
 
 The CLI, or **Command Line Interface,** is a text-based way to do stuff on your Linux computer.
 
-(Back in the old days, this was actually the *only* way to interact with the computer).
+(Back in the old days, this was actually the _only_ way to interact with the computer).
 
 ## Terminology
 
@@ -18,14 +19,14 @@ The CLI, or **Command Line Interface,** is a text-based way to do stuff on your 
 
 - All files in Linux are arranged in a hierarchical directory structure
 - A directory can hold 2 things:
-    1. Files
-    2. Other directories
+  1. Files
+  2. Other directories
 - The topmost directory (or outermost folder) is ‘/’ and is called the root directory.
 - Inside the root directory, there are many directories (most of them, you don't need to worry about). One of them is called ‘home’.
-    - Inside ‘home’, each user has their own ‘home directory’ named after their username. All your personal files are in your home directory.
+  - Inside ‘home’, each user has their own ‘home directory’ named after their username. All your personal files are in your home directory.
 - If there's a directory or file inside another directory, then you can append its name to the parent directory to get its full path name.
-    - for ex. bob's home directory would be called /home/bob
-    - another example: /home/bob/Documents/school/math/homework.pdf
+  - for ex. bob's home directory would be called /home/bob
+  - another example: /home/bob/Documents/school/math/homework.pdf
 
 Note: if you append a slash (/) to a **directory** name, it doesn't change the meaning (it doesn't matter). This is not the case for files, however.
 
@@ -47,8 +48,8 @@ You may be familiar with these terms from using Windows/macOS, but it is useful 
 <div class="img-center">
 
 ![Root Directory](../assets/root-dir.png)
-</div> 
 
+</div>
 
 ## pwd - print working directory
 
@@ -62,13 +63,13 @@ You may be familiar with these terms from using Windows/macOS, but it is useful 
 - shows you what you would normally see in a graphical file browser
 - type `ls -a` to show all files, including hidden files. Hidden files are those that start with a dot (.)
 - In general, you can replace the ‘a’ with other letters to modify the effect of a command. These are known as ‘options’ or ‘flags’.
-    - For example, you can use the ‘l’ option with the `ls` command (type `ls -l`) to see some more info about the files and directories (don't worry about what it means)
-    - Other commands have options too
+  - For example, you can use the ‘l’ option with the `ls` command (type `ls -l`) to see some more info about the files and directories (don't worry about what it means)
+  - Other commands have options too
 
-## cd ``<name>`` - change directory
+## cd `<name>` - change directory
 
-- changes the current directory. Replace ``<name>`` with the name of
-the directory that you wish to enter. Equivalent to clicking on a folder in a graphical file browser
+- changes the current directory. Replace `<name>` with the name of
+  the directory that you wish to enter. Equivalent to clicking on a folder in a graphical file browser
 - type `cd ..` to go to the parent directory
 - you can chain multiple directories like so:
 
@@ -83,13 +84,13 @@ cd ../../../
 ```
 
 - you can use ‘absolute’ and ‘relative’ path names of the directories
-    - absolute names start with ‘/’. for ex. /home/bob/Documents/english
-    - relative names don't start with ‘/’ and are assumed to begin from the current directory. for ex. Documents/english
+  - absolute names start with ‘/’. for ex. /home/bob/Documents/english
+  - relative names don't start with ‘/’ and are assumed to begin from the current directory. for ex. Documents/english
 
-## man ``<command>`` - manual
+## man `<command>` - manual
 
 - shows you information about the usage of a command
-- replace ``<command>`` with a command, like ‘ls’ or ‘cd’
+- replace `<command>` with a command, like ‘ls’ or ‘cd’
 - press q to quit
 - although the ‘man pages’ (which is the common name for these manual entries) may seem hard to understand at first, I encourage you to at least try to read the Descrip./tion section. Over time, you will learn the jargon and the man pages will become more and more helpful.
 - man pages also list all the commands’ options/flags and what each option does
@@ -135,11 +136,11 @@ ls myFile
 ```
 
 - you can use wildcard characters:
-    - ? - any one character
-    - - any amount of any character(s)
-    - [ab] - a or b
-    - [a-z] - characters from a to z
-    - [!a] - any character except a
+  - ? - any one character
+  - - any amount of any character(s)
+  - [ab] - a or b
+  - [a-z] - characters from a to z
+  - [!a] - any character except a
 
 ```
 ls myF?le

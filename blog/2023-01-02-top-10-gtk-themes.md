@@ -4,9 +4,10 @@ title: Top 10 GTK Themes
 authors: [surya, orca]
 tags: [GTK, linux, pop_os]
 ---
+
 # Top 10 Best GTK Themes
 
-Good evening, wonderful internet people; we’re back yet again with the best GTK themes to spice up your desktop because imagine using default themes in 2022. We are using stock Pop!_OS in the screenshots to display the theme, although you can do much more customization yourself if you so desire. Let’s get right into it!
+Good evening, wonderful internet people; we’re back yet again with the best GTK themes to spice up your desktop because imagine using default themes in 2022. We are using stock Pop!\_OS in the screenshots to display the theme, although you can do much more customization yourself if you so desire. Let’s get right into it!
 
 <!-- truncate -->
 
@@ -42,7 +43,7 @@ Overall, it’s an excellent theme for those who like winter!
 
 WhiteSur Dark Version
 
-As you can tell, this theme was inspired by macOS. That’s right, we took the light theme and made it dark. That’s how much we hate light mode! 
+As you can tell, this theme was inspired by macOS. That’s right, we took the light theme and made it dark. That’s how much we hate light mode!
 
 Anyways, the WhiteSur repository has more than just a GTK theme. You can go as far as making your GNOME desktop environment look exactly like macOS! It even has its own [icon pack](https://github.com/vinceliuice/WhiteSur-icon-theme) (which looks extremely clean).
 
@@ -129,4 +130,3 @@ The Nautilus sidebar looks cool, but the theme is a bit square and dull. However
 ### We don’t hate light mode, by the way. 😂
 
 > We hope you like our rants and if you enjoy our content, consider subscribing…. No, we don’t have any Patreon or anything, so check out our other pages instead!
->

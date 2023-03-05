@@ -21,38 +21,25 @@ const config = {
   organizationName: "picafe",
   projectName: "website",
 
-
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
   },
-  plugins: [
-    "docusaurus-plugin-sass",
-    [
-      "@docusaurus/plugin-ideal-image",
-      {
-        quality: 85,
-        max: 2000,
-        min: 500,
-        steps: 4,
-        disableInDev: false,
-      },
-    ],
-  ],
+  plugins: [],
   presets: [
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: 'guides',
-          editUrl: 'https://github.com/picafe/picafe-blog/tree/main/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "guides",
+          editUrl: "https://github.com/picafe/picafe-blog/tree/main/",
         },
         blog: {
-          showReadingTime: true, 
-          readingTime: ({content, frontMatter, defaultReadingTime}) =>
-            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
+          showReadingTime: true,
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
           editUrl: "https://github.com/picafe/picafe-blog/tree/main/",
           feedOptions: {
             type: "all",
@@ -60,7 +47,7 @@ const config = {
           },
         },
         theme: {
-          customCss: [require.resolve("./src/css/custom.scss")],
+          customCss: [require.resolve("./src/css/styles.css")],
         },
       }),
     ],
@@ -69,7 +56,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/logo-small.png",
+      image: "img/banner.jpg",
       metadata: [
         {
           name: "description",
@@ -80,10 +67,6 @@ const config = {
           name: "keywords",
           content:
             "blog,tech,news,picafe,linux,hardware,software,productivity,apps,windows",
-        },
-        {
-          name: "og:image",
-          content: "img/banner.jpg",
         },
         {
           name: "twitter:card",
@@ -143,11 +126,11 @@ const config = {
         ],
         copyright: `Copyright © 2022-${new Date().getFullYear()} picafe blog`,
       },
-       algolia: {
-         appId: "LNRD4R1PWW",
-         apiKey: "f3cb447c78446ce74a4aec184d27d543",
-         indexName: "picafe",
-       },
+      algolia: {
+        appId: "LNRD4R1PWW",
+        apiKey: "f3cb447c78446ce74a4aec184d27d543",
+        indexName: "picafe",
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

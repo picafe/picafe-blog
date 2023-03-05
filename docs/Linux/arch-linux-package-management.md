@@ -2,6 +2,7 @@
 sidebar: auto
 sidebarDepth: 2
 ---
+
 # Arch Linux Package Management Full Guide
 
 Date: October 29, 2022
@@ -36,7 +37,7 @@ You can search for packages to install with pacman on the [Arch Linux website](h
 pacman -Ss <package_name>
 ```
 
-This will search for packages with the query you entered and list all that contain them in alphabetical order. 
+This will search for packages with the query you entered and list all that contain them in alphabetical order.
 Note: This will also search the package descriptions.
 
 ---
@@ -102,7 +103,7 @@ The -u flag does an upgrade; however, it is general practice to use it with -y, 
 sudo pacman -Syu
 ```
 
-This does a full system upgrade. 
+This does a full system upgrade.
 
 ---
 
@@ -188,7 +189,7 @@ When you install a package with pacman, the packages are stored in **/var/cache/
 Note: paccache and more and included in the `pacman-contrib` package, which you can install with `sudo pacman -S pacman-contrib`
 
 ```bash
-sudo pacman -Sc 
+sudo pacman -Sc
 ```
 
 This clears all cached packages that aren’t installed.
@@ -255,7 +256,7 @@ Note: There may be languages such as Rust and Go, which are used to compile cert
 
 ## Tips and Tricks
 
-There is a whole Arch Wiki page for [pacman tips and tricks](https://wiki.archlinux.org/title/pacman/Tips_and_tricks), and we encourage you to check it out as you’ll be using the Arch Wiki a lot! Check out the contents list and discover what you think will help improve your Arch experience. 
+There is a whole Arch Wiki page for [pacman tips and tricks](https://wiki.archlinux.org/title/pacman/Tips_and_tricks), and we encourage you to check it out as you’ll be using the Arch Wiki a lot! Check out the contents list and discover what you think will help improve your Arch experience.
 
 ## The Arch User Repository (AUR)
 
@@ -285,7 +286,7 @@ The -s installs the required dependencies with pacman (in our case, the dependen
 
 ## Using the Yay AUR Helper
 
-Now that you have yay, you can easily install packages from the AUR! There isn’t much of a learning curve, as yay uses the same syntax for finding, installing, and updating packages. However, there are some useful commands you may want to know.  
+Now that you have yay, you can easily install packages from the AUR! There isn’t much of a learning curve, as yay uses the same syntax for finding, installing, and updating packages. However, there are some useful commands you may want to know.
 
 Note: yay should **not** be run with sudo, as it will prompt you to enter your password when needed.
 
@@ -293,7 +294,7 @@ Note: yay should **not** be run with sudo, as it will prompt you to enter your p
 yay -Ps
 ```
 
-This command will print system statistics, such as how much space your cached packages are taking up and the size of your largest packages. 
+This command will print system statistics, such as how much space your cached packages are taking up and the size of your largest packages.
 
 ---
 
@@ -301,7 +302,7 @@ This command will print system statistics, such as how much space your cached pa
 yay -Sc
 ```
 
-This command will help you clear all unneeded pacman and yay cache while keeping cache for all installed packages.  
+This command will help you clear all unneeded pacman and yay cache while keeping cache for all installed packages.
 
 ## Useful pacman.conf Settings
 
@@ -319,7 +320,7 @@ VerbosePkgLists
 #ParallelDownloads = 5
 ```
 
- `UseSyslog` will log pacman action entries in `/var/log/messages`
+`UseSyslog` will log pacman action entries in `/var/log/messages`
 
 `Color` will enable colour in pacman’s output; however, only when in tty.
 

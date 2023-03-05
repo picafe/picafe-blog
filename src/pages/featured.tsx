@@ -3,21 +3,21 @@ import Layout from "@theme/Layout";
 
 import { Project, featuredData } from "../components/featured/Featured";
 
-const assetsDir = "./assets/apps";
 const apps: featuredData[] = [
   {
-    title: "Coming Soon",
+    title: "Moosync",
     description:
-      "Stay tuned, for now check out our other posts!.",
-    url: "https://picafe.dev",
-    url1: "https://picafe.dev",
-    image: require(`${assetsDir}/coming-soon.png`),
-    date: "Jan 3rd, 2023",
+      "The best music player for the unorganized (like me). Proper review coming soon!",
+    url: "https://moosync.app",
+    url1: "https://github.com/Moosync/Moosync",
+    image: "img/moosync-banner.png",
+    date: "Mar 4th, 2023",
   },
 ];
 
 const title = "Featured Apps";
-const description = "A collection of produvtivity apps that we have featured on our blog.";
+const description =
+  "A collection of produvtivity apps that we have featured on our blog.";
 
 export default function Projects(): JSX.Element {
   return (

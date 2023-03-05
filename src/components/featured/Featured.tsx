@@ -1,9 +1,8 @@
 import clsx from "clsx";
 import React, { FunctionComponent } from "react";
-import Image from "@theme/IdealImage";
 
 import DiscoverIcon from "./assets/icon-discover.svg";
-import styles from "./Featured.module.scss";
+import styles from "./Featured.module.css";
 
 export interface featuredData {
   title: string;
@@ -26,7 +25,7 @@ export const Project: FunctionComponent<featuredData> = ({
     <div className={clsx("col col--6", styles.cardContainer)}>
       <div className={clsx("card", styles.card)}>
         <div className={clsx("card__image", styles.image)}>
-          <Image img={image} alt={description} title={title} />
+          <img src={image} alt={description} title={title} />
           {date && (
             <span className={clsx("badge badge--secondary", styles.date)}>
               Date: {date}
