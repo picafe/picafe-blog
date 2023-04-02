@@ -8,7 +8,7 @@ const apps: featuredData[] = [
     title: "Moosync",
     description:
       "The best music player for the unorganized (like me). Proper review coming soon!",
-    url: "https://moosync.app",
+    url: "https://picafe.dev/blog/moosync",
     url1: "https://github.com/Moosync/Moosync",
     image: "img/moosync-banner.png",
     date: "Mar 4th, 2023",
