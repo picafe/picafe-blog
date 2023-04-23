@@ -11,4 +11,3 @@ Either way, we still have no clue what we're going to write about here, so just 
 Either way, thanks for stopping by!
 
 So long, fellow human!,
-SriSur
