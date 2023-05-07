@@ -1,5 +1,3 @@
 # picafe-blog
 
-## Welcome to the VPCI blog!
-
-This is the official blog for the VPCI Linux Club, and our collective personal blog where Orca and Surya write rants 🤣.
+A random blog where I post random things (ignore the lack of content)
